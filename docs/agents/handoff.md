@@ -17,19 +17,21 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 
 Tarea 2 — Definir de qué trata el primer mod
 
-Decidir con el operador qué hace el primer mod y crear `mods/<nombre>/README.md` con esa definición (convención en el [`README.md`](../../README.md) raíz).
+Definir el primer mod y documentarlo en `mods/<nombre>/README.md` (convención en el [`README.md`](../../README.md) raíz). Hecho: [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md) escrito como borrador.
 
 ### Qué falta
 
-Que el operador defina qué hace el mod y de qué tipo es; luego escribir su README.
+Que el operador revise la definición y pida cerrar la tarea (Regla 5 de `rules.md`).
 
 ### Decisiones a medio camino
 
-Ninguna.
+- Primer mod: `usage-meter`, un hook que muestra en un recuadro solo el % de contexto, de la ventana de 5 horas y de la semanal.
+- Factible con la API actual: evento `session.measure` (contexto + `rateLimits`) y render en `AbovePrompt`.
+- Abierto: formato visual del recuadro; "uso del plan" se toma como las ventanas de 5h y semanal.
 
 ### Próximo paso concreto
 
-Preguntar al operador el propósito y tipo del mod (skill, hook, plugin, etc.).
+Esperar la revisión del operador; al pedir el cierre, documentar en `history.md` y `backlog.md`.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
