@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-08 — ✅ Tarea 2 — Definir de qué trata el primer mod
+
+- El primer mod es `usage-meter`: un hook que muestra en un recuadro solo porcentajes de contexto y de los límites de 5 horas y semanal, con su tiempo de restablecimiento, para saber de un vistazo cuánto se va consumiendo sin ver detalles.
+- Se verificó que la API de hooks entrega esos datos (`session.measure`) antes de fijar la definición. Diseño y decisiones en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-08 — ✅ Tarea 1 — Iniciar estructura de carpetas
 
 - Se definió que cada mod vive en `mods/<nombre>/` con un README que explica qué hace, para que la colección escale sin mezclarse con las herramientas del repo (`.claude/`).

@@ -28,16 +28,18 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
+### Tarea 3 — Construir el primer mod
+
+- **Descripción:** Implementar el mod `usage-meter` según [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+- **Decisiones/temas a definir antes de empezar:** Ancho del recuadro en terminales angostas (ver "Por decidir" del README del mod).
+- **Bloqueos:** [Resuelto el 2026-10-08] — mod definido (Tarea 2); estructura de carpetas creada (Tarea 1).
+- **Disparador:** cuando el operador pregunte por tareas pendientes.
+- **Agregada:** 2026-10-08
+
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
-### Tarea 3 — Construir el primer mod
-
-- **Descripción:** Implementar el primer mod según el `README.md` definido en la Tarea 2.
-- **Decisiones/temas a definir antes de empezar:** Ninguno, salvo los que deje abiertos la Tarea 2.
-- **Bloqueos:** [dependencia] Requiere que el primer mod esté definido (Tarea 2). [Resuelto el 2026-10-08] — estructura de carpetas creada (Tarea 1).
-- **Disparador:** al cerrarse la Tarea 2.
-- **Agregada:** 2026-10-08
+Ninguna.
 
 <!-- agent-context-kit:section=grouped -->
 ## Tareas agrupadas

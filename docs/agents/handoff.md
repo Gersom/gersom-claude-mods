@@ -15,23 +15,9 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 2 — Definir de qué trata el primer mod
+Sin tarea en curso
 
-Definir el primer mod y documentarlo en `mods/<nombre>/README.md` (convención en el [`README.md`](../../README.md) raíz). Hecho: [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md) escrito como borrador.
-
-### Qué falta
-
-Que el operador revise la definición y pida cerrar la tarea (Regla 5 de `rules.md`).
-
-### Decisiones a medio camino
-
-- Primer mod: `usage-meter`, un hook que muestra en un recuadro solo el % de contexto, de la ventana de 5 horas y de la semanal.
-- Factible con la API actual: evento `session.measure` (contexto + `rateLimits`) y render en `AbovePrompt`.
-- Abierto: formato visual del recuadro; "uso del plan" se toma como las ventanas de 5h y semanal.
-
-### Próximo paso concreto
-
-Esperar la revisión del operador; al pedir el cierre, documentar en `history.md` y `backlog.md`.
+Última cerrada: Tarea 2 (definición de `usage-meter`). La Tarea 3 — Construir el primer mod — está libre en [`backlog.md`](./backlog.md).
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
