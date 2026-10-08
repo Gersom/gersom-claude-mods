@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-08 — ✅ Tarea 4 — Cambiar diseño del panel
+
+- Se rediseñó el panel de `usage-meter`: contexto en azul y límites en violeta, barra con color de umbral en reposo, animación del porcentaje y la barra al cambiar, y reset en segunda línea en terminales estrechas. Los cálculos no cambiaron.
+- Se revisó a mano en sesión (tema oscuro). Los tests no cubren la animación. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md) y [`odd/tasks/cambiar-diseno.md`](../../odd/tasks/cambiar-diseno.md).
+
 ## 2026-10-08 — ✅ Tarea 3 — Construir el primer mod
 
 - Se construyó `usage-meter`: un hook que muestra sobre el prompt un recuadro con el % de contexto y de los límites de 5 horas y semanal, con color por umbral y el tiempo de restablecimiento, para ver el consumo de un vistazo.
