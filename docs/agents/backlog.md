@@ -28,14 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 1 — Iniciar estructura de carpetas
-
-- **Descripción:** Definir y crear la estructura de carpetas del repo para alojar los mods (y actualizar `docs/project/architecture.md`).
-- **Decisiones/temas a definir antes de empezar:** Layout de carpetas por mod y dónde viven (ej. `mods/<nombre>/`).
-- **Bloqueos:** Ninguno.
-- **Disparador:** cuando el operador pregunte por tareas pendientes.
-- **Agregada:** 2026-10-08
-
 ### Tarea 2 — Definir de qué trata el primer mod
 
 - **Descripción:** Decidir el propósito del primer mod y crear un `README.md` en la carpeta de ese mod que lo describa.

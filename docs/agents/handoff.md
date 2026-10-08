@@ -15,13 +15,21 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-**Tarea:** Sin tarea en curso
+Tarea 1 — Iniciar estructura de carpetas
 
-Documentación de contexto recién generada (2026-10-08); todavía no se tomó ninguna tarea.
+Estructura acordada con el operador: carpeta `mods/` con una subcarpeta por mod, cada una con su `README.md` que define qué hace. Hecho: `mods/README.md` creado y `architecture.md` actualizado.
+
+### Qué falta
+
+Que el operador revise y pida cerrar la tarea (Regla 5 de `rules.md`).
+
+### Decisiones a medio camino
+
+- Los mods viven en `mods/<nombre>/` (kebab-case), no bajo `.claude/`; el repo es exclusivamente para Claude Code.
 
 ### Próximo paso concreto
 
-Preguntarle al operador qué quiere trabajar primero y registrarlo en [`backlog.md`](./backlog.md).
+Esperar la revisión del operador; al pedir el cierre, documentar en `history.md` y `backlog.md`.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
