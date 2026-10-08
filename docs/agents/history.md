@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-08 — ✅ Tarea 1 — Iniciar estructura de carpetas
+
+- Se definió que cada mod vive en `mods/<nombre>/` con un README que explica qué hace, para que la colección escale sin mezclarse con las herramientas del repo (`.claude/`).
+- El README de convención va en la raíz del repo (no en `mods/`), porque es la presentación de todo el proyecto. Ver [`architecture.md`](../project/architecture.md).
+
 ## 2026-10-08 — ✅ Documentación de contexto inicial
 
 - Se generó `docs/` con agent-context-kit (set completo, etapa idea/setup) para que cualquier agente sepa en qué punto está el proyecto sin depender de una conversación.

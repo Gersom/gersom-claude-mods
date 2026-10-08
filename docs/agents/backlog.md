@@ -28,16 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 2 — Definir de qué trata el primer mod
-
-- **Descripción:** Decidir el propósito del primer mod y crear un `README.md` en la carpeta de ese mod que lo describa.
-- **Decisiones/temas a definir antes de empezar:** Qué hace el mod y qué tipo es (skill, hook, plugin, etc.).
-- **Bloqueos:** Ninguno.
-- **Desbloquea:** Tarea 3.
-- **Disparador:** cuando el operador pregunte por tareas pendientes.
-- **Detalles:** La carpeta del mod sigue la estructura de la Tarea 1.
-- **Agregada:** 2026-10-08
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
@@ -45,8 +35,8 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 - **Descripción:** Implementar el primer mod según el `README.md` definido en la Tarea 2.
 - **Decisiones/temas a definir antes de empezar:** Ninguno, salvo los que deje abiertos la Tarea 2.
-- **Bloqueos:** [dependencia] Requiere que el primer mod esté definido (Tarea 2) y la estructura de carpetas creada (Tarea 1).
-- **Disparador:** al cerrarse las Tareas 1 y 2.
+- **Bloqueos:** [dependencia] Requiere que el primer mod esté definido (Tarea 2). [Resuelto el 2026-10-08] — estructura de carpetas creada (Tarea 1).
+- **Disparador:** al cerrarse la Tarea 2.
 - **Agregada:** 2026-10-08
 
 <!-- agent-context-kit:section=grouped -->

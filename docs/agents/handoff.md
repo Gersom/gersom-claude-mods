@@ -15,21 +15,21 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 1 — Iniciar estructura de carpetas
+Tarea 2 — Definir de qué trata el primer mod
 
-Estructura acordada con el operador: carpeta `mods/` con una subcarpeta por mod, cada una con su `README.md` que define qué hace. Hecho: `mods/README.md` creado y `architecture.md` actualizado.
+Decidir con el operador qué hace el primer mod y crear `mods/<nombre>/README.md` con esa definición (convención en el [`README.md`](../../README.md) raíz).
 
 ### Qué falta
 
-Que el operador revise y pida cerrar la tarea (Regla 5 de `rules.md`).
+Que el operador defina qué hace el mod y de qué tipo es; luego escribir su README.
 
 ### Decisiones a medio camino
 
-- Los mods viven en `mods/<nombre>/` (kebab-case), no bajo `.claude/`; el repo es exclusivamente para Claude Code.
+Ninguna.
 
 ### Próximo paso concreto
 
-Esperar la revisión del operador; al pedir el cierre, documentar en `history.md` y `backlog.md`.
+Preguntar al operador el propósito y tipo del mod (skill, hook, plugin, etc.).
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
