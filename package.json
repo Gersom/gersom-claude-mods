@@ -1,0 +1,7 @@
+{
+  "name": "claude-mods",
+  "private": true,
+  "scripts": {
+    "usage-meter": "claude --plugin-dir mods/usage-meter"
+  }
+}
