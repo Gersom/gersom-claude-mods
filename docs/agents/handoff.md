@@ -15,9 +15,32 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 3 — Construir el primer mod
 
-Última cerrada: Tarea 2 (definición de `usage-meter`). La Tarea 3 — Construir el primer mod — está libre en [`backlog.md`](./backlog.md).
+Implementar `usage-meter` según [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md). El código vive en `mods/usage-meter/` y se carga con `claude --plugin-dir`.
+
+### Plan
+
+- [ ] Paso 1 — Estructura base del plugin: `.claude-plugin/plugin.json`, `hooks/hooks.json`, `hooks/register.tsx` y contrato `types/index.d.ts`
+- [ ] Paso 2 — Lógica pura con tests (barra, color por umbral, tiempo relativo y fecha de restablecimiento)
+- [ ] Paso 3 — Hook `session.measure` que guarda los datos y `ui.render` en `AbovePrompt` que dibuja el recuadro
+- [ ] Paso 4 — Validar: `claude plugin validate`, `tsc` y `claude plugin test`
+- [ ] Paso 5 — Probar en vivo con `--plugin-dir` y ajustar (terminales angostas)
+- [ ] Documentar cierre de tarea
+
+**Modo de ejecución acordado:** pendiente de confirmar con el operador
+
+### Qué falta
+
+Todo; el plan está pendiente de aprobación.
+
+### Decisiones a medio camino
+
+Ninguna.
+
+### Próximo paso concreto
+
+Confirmar el plan y el modo de ejecución con el operador, luego empezar por el Paso 1.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
