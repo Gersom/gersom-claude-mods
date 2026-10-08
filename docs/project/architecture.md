@@ -16,6 +16,7 @@ claude-mods/
 │           └── template/        # plantillas que se copian a docs/
 ├── mods/                        # colección de mods para Claude Code
 │   └── <mod>/README.md          # una carpeta por mod; su README define qué hace
+├── README.md                    # presentación del repo y convención de mods
 ├── docs/                        # documentación de contexto para agentes (este mapa)
 ├── AGENTS.md                    # orden de lectura para agentes (fuente de verdad)
 └── CLAUDE.md                    # redirige a AGENTS.md
