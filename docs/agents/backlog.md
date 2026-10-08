@@ -28,16 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 5 — cambiar porcentajes
-- **Descripción:** Cambiar los umbrales de color del mod `usage-meter`: verde hasta 60 %, amarillo hasta 80 %, rojo desde 80 %. Hoy son verde hasta 70 %, amarillo hasta 90 %, rojo desde 90 %.
-- **Decisiones/temas a definir antes de empezar:** Confirmar si el 80 % exacto es amarillo (interpretación propuesta: amarillo de 61 a 80, rojo sobre 80).
-- **Bloqueos:** Ninguno.
-- **Disparador:** Cuando el operador pida tareas pendientes.
-- **Agregada:** 2026-10-08
-
-<!-- agent-context-kit:section=blocked -->
-## Tareas bloqueadas / pospuestas
-
 Ninguna.
 
 <!-- agent-context-kit:section=blocked -->
