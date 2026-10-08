@@ -21,26 +21,27 @@ Implementar `usage-meter` según [`mods/usage-meter/README.md`](../../mods/usage
 
 ### Plan
 
-- [ ] Paso 1 — Estructura base del plugin: `.claude-plugin/plugin.json`, `hooks/hooks.json`, `hooks/register.tsx` y contrato `types/index.d.ts`
-- [ ] Paso 2 — Lógica pura con tests (barra, color por umbral, tiempo relativo y fecha de restablecimiento)
-- [ ] Paso 3 — Hook `session.measure` que guarda los datos y `ui.render` en `AbovePrompt` que dibuja el recuadro
-- [ ] Paso 4 — Validar: `claude plugin validate`, `tsc` y `claude plugin test`
-- [ ] Paso 5 — Probar en vivo con `--plugin-dir` y ajustar (terminales angostas)
+- [x] Paso 1 — Estructura base del plugin: `.claude-plugin/plugin.json`, `hooks/hooks.json`, `hooks/register.tsx` y contrato `types/index.d.ts`
+- [x] Paso 2 — Lógica pura con tests (barra, color por umbral, tiempo relativo y fecha de restablecimiento)
+- [x] Paso 3 — Hook `session.measure` que guarda los datos y `ui.render` en `AbovePrompt` que dibuja el recuadro
+- [x] Paso 4 — Validar: `claude plugin validate`, `tsc` y `claude plugin test`
+- [ ] Paso 5 — Probar en vivo con `--plugin-dir` y ajustar (terminales angostas): pendiente de la revisión visual del operador
 - [ ] Documentar cierre de tarea
 
-**Modo de ejecución acordado:** pendiente de confirmar con el operador
+**Modo de ejecución acordado:** todos los pasos seguidos
 
 ### Qué falta
 
-Todo; el plan está pendiente de aprobación.
+Paso 5: que el operador cargue el mod en una sesión real (`claude --plugin-dir mods/usage-meter`), revise cómo se ve el recuadro y pida ajustes; luego el cierre (Regla 5).
 
 ### Decisiones a medio camino
 
-Ninguna.
+- Verificado sin sesión interactiva: `claude plugin validate` OK, `tsc` limpio, 16 tests pasan (lógica y render en terminal y desktop con datos simulados).
+- El título «Uso» va como fila dentro del recuadro, no en el borde (limitación del `Box`); anotado en el README del mod.
 
 ### Próximo paso concreto
 
-Confirmar el plan y el modo de ejecución con el operador, luego empezar por el Paso 1.
+Pedirle al operador que pruebe el mod en vivo y reporte ajustes.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
