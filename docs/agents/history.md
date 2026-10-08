@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-08 — ✅ Tarea 5 — Cambiar porcentajes
+
+- Los umbrales de color de `usage-meter` pasan a verde hasta 60 %, amarillo de 61 a 80 % y rojo por encima de 80 %, en lugar de 70 y 90 %. El 80 % exacto quedó en amarillo.
+- Tests (23/23) y validación pasan. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-08 — ✅ Tarea 4 — Cambiar diseño del panel
 
 - Se rediseñó el panel de `usage-meter`: contexto en azul y límites en violeta, barra con color de umbral en reposo, animación del porcentaje y la barra al cambiar, y reset en segunda línea en terminales estrechas. Los cálculos no cambiaron.

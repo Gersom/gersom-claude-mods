@@ -15,19 +15,9 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 5 — cambiar porcentajes
+Sin tarea en curso
 
-Mod: `mods/usage-meter`. Rama: `feat/cambiar-porcentajes`, creada desde `feat/cambiar-diseno` (la Tarea 4 aún no está en `main`).
-
-Umbrales nuevos: verde hasta 60 %, amarillo de 61 a 80 %, rojo por encima de 80 %. Interpretación del 80 %: amarillo (confirmar si el operador prefiere rojo).
-
-Pasos:
-- [x] Cambiar `level` en `format.ts` y su test.
-- [x] Actualizar la sección de umbrales del README.
-- [x] `claude plugin validate` pasó; `claude plugin test` 23/23.
-- [ ] Revisión en sesión y cierre (pendiente de pedido del operador).
-
-Próximo paso concreto: confirmar el 80 % y revisar en sesión.
+Última cerrada: Tarea 5 (umbrales de color a 60 y 80). Rama `feat/cambiar-porcentajes`, creada desde `feat/cambiar-diseno`; ambas ramas aún no están en `main`. Backlog sin tareas libres.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
