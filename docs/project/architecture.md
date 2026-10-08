@@ -14,6 +14,8 @@ claude-mods/
 │           ├── SKILL.md         # punto de entrada del skill
 │           ├── docs/            # flujos del skill (preguntas, migración, multi-operador)
 │           └── template/        # plantillas que se copian a docs/
+├── mods/                        # colección de mods para Claude Code
+│   └── <mod>/README.md          # una carpeta por mod; su README define qué hace
 ├── docs/                        # documentación de contexto para agentes (este mapa)
 ├── AGENTS.md                    # orden de lectura para agentes (fuente de verdad)
 └── CLAUDE.md                    # redirige a AGENTS.md
@@ -21,9 +23,9 @@ claude-mods/
 
 ## Convenciones de organización
 
-El repo es una colección de mods/skills para Claude Code; todavía no tiene código propio más allá del skill local. Cada mod nuevo debería vivir en su propia carpeta bajo `.claude/` (skills en `.claude/skills/<nombre>/`).
+El repo es una colección de mods exclusivamente para Claude Code. Cada mod vive en `mods/<nombre>/` (kebab-case) con un `README.md` que define qué hace. `.claude/` es solo para las herramientas que usa este repo (como el skill local), no para los mods.
 
 ## Dónde va cada cosa nueva
 
-- Un skill nuevo → `.claude/skills/<nombre>/` con su `SKILL.md`.
+- Un mod nuevo → `mods/<nombre>/` con su `README.md`.
 - Documentación de contexto del proyecto → `docs/`, según [`../README.md`](../README.md).
