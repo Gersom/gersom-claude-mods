@@ -21,19 +21,41 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 1
+**Próximo número de tarea:** 4
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-Ninguna.
+### Tarea 1 — Iniciar estructura de carpetas
+
+- **Descripción:** Definir y crear la estructura de carpetas del repo para alojar los mods (y actualizar `docs/project/architecture.md`).
+- **Decisiones/temas a definir antes de empezar:** Layout de carpetas por mod y dónde viven (ej. `mods/<nombre>/`).
+- **Bloqueos:** Ninguno.
+- **Disparador:** cuando el operador pregunte por tareas pendientes.
+- **Agregada:** 2026-10-08
+
+### Tarea 2 — Definir de qué trata el primer mod
+
+- **Descripción:** Decidir el propósito del primer mod y crear un `README.md` en la carpeta de ese mod que lo describa.
+- **Decisiones/temas a definir antes de empezar:** Qué hace el mod y qué tipo es (skill, hook, plugin, etc.).
+- **Bloqueos:** Ninguno.
+- **Desbloquea:** Tarea 3.
+- **Disparador:** cuando el operador pregunte por tareas pendientes.
+- **Detalles:** La carpeta del mod sigue la estructura de la Tarea 1.
+- **Agregada:** 2026-10-08
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
-Ninguna.
+### Tarea 3 — Construir el primer mod
+
+- **Descripción:** Implementar el primer mod según el `README.md` definido en la Tarea 2.
+- **Decisiones/temas a definir antes de empezar:** Ninguno, salvo los que deje abiertos la Tarea 2.
+- **Bloqueos:** [dependencia] Requiere que el primer mod esté definido (Tarea 2) y la estructura de carpetas creada (Tarea 1).
+- **Disparador:** al cerrarse las Tareas 1 y 2.
+- **Agregada:** 2026-10-08
 
 <!-- agent-context-kit:section=grouped -->
 ## Tareas agrupadas
