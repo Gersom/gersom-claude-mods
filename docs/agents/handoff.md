@@ -15,33 +15,9 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 3 — Construir el primer mod
+Sin tarea en curso
 
-Implementar `usage-meter` según [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md). El código vive en `mods/usage-meter/` y se carga con `claude --plugin-dir`.
-
-### Plan
-
-- [x] Paso 1 — Estructura base del plugin: `.claude-plugin/plugin.json`, `hooks/hooks.json`, `hooks/register.tsx` y contrato `types/index.d.ts`
-- [x] Paso 2 — Lógica pura con tests (barra, color por umbral, tiempo relativo y fecha de restablecimiento)
-- [x] Paso 3 — Hook `session.measure` que guarda los datos y `ui.render` en `AbovePrompt` que dibuja el recuadro
-- [x] Paso 4 — Validar: `claude plugin validate`, `tsc` y `claude plugin test`
-- [ ] Paso 5 — Probar en vivo con `--plugin-dir` y ajustar (terminales angostas): pendiente de la revisión visual del operador
-- [ ] Documentar cierre de tarea
-
-**Modo de ejecución acordado:** todos los pasos seguidos
-
-### Qué falta
-
-Paso 5: que el operador cargue el mod en una sesión real (`claude --plugin-dir mods/usage-meter`), revise cómo se ve el recuadro y pida ajustes; luego el cierre (Regla 5).
-
-### Decisiones a medio camino
-
-- Verificado sin sesión interactiva: `claude plugin validate` OK, `tsc` limpio, 16 tests pasan (lógica y render en terminal y desktop con datos simulados).
-- El título «Uso» va como fila dentro del recuadro, no en el borde (limitación del `Box`); anotado en el README del mod.
-
-### Próximo paso concreto
-
-Pedirle al operador que pruebe el mod en vivo y reporte ajustes.
+Última cerrada: Tarea 3 (mod `usage-meter` construido y aprobado). No quedan tareas en el backlog.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

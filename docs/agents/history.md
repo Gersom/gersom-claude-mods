@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-08 — ✅ Tarea 3 — Construir el primer mod
+
+- Se construyó `usage-meter`: un hook que muestra sobre el prompt un recuadro con el % de contexto y de los límites de 5 horas y semanal, con color por umbral y el tiempo de restablecimiento, para ver el consumo de un vistazo.
+- Se probó en una sesión real tras habilitar la recarga en caliente; se ajustó la alineación de las barras (columnas de ancho fijo) y el título «Uso» dentro del recuadro. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-08 — ✅ Tarea 2 — Definir de qué trata el primer mod
 
 - El primer mod es `usage-meter`: un hook que muestra en un recuadro solo porcentajes de contexto y de los límites de 5 horas y semanal, con su tiempo de restablecimiento, para saber de un vistazo cuánto se va consumiendo sin ver detalles.

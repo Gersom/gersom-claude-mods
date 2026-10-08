@@ -15,7 +15,7 @@ claude-mods/
 │           ├── docs/            # flujos del skill (preguntas, migración, multi-operador)
 │           └── template/        # plantillas que se copian a docs/
 ├── mods/                        # colección de mods para Claude Code
-│   └── <mod>/README.md          # una carpeta por mod; su README define qué hace
+│   └── usage-meter/             # recuadro con % de contexto y límites de 5 h y semanal
 ├── README.md                    # presentación del repo y convención de mods
 ├── docs/                        # documentación de contexto para agentes (este mapa)
 ├── AGENTS.md                    # orden de lectura para agentes (fuente de verdad)
