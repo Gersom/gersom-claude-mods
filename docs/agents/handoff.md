@@ -15,9 +15,26 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 4 — cambiar diseño
 
-Última cerrada: Tarea 3 (mod `usage-meter` construido y aprobado). No quedan tareas en el backlog.
+Feature doc: [`odd/tasks/cambiar-diseno.md`](../../odd/tasks/cambiar-diseno.md). Mod: `mods/usage-meter`.
+
+Pasos del plan:
+- [x] Mover la tarea del backlog a este archivo y crear el feature doc.
+- [ ] `format.ts`: funciones de presentación (bloques vacíos en gris, porcentaje alineado, reset atenuado). Sin cambiar cálculos.
+- [ ] `register.tsx`: layout nuevo (título `Uso` gris suave, etiquetas y barra en color distintivo, reset en segunda línea en terminales estrechas).
+- [ ] Animación: valor mostrado en `$.state`, `$.clock.every` que avanza hacia el objetivo; durante la animación la barra va en color distintivo y al terminar vuelve al color del umbral.
+- [ ] Tests y validación (`claude plugin test mods/usage-meter`, `claude plugin validate mods/usage-meter`).
+- [ ] Documentar cierre (README, history).
+
+Decisiones tomadas:
+- Etiquetas y barra con color distintivo: `Contexto` en azul; `5 horas` y `Semana` en violeta (la especificación da verde o violeta; se eligió violeta para no confundirlo con el verde del umbral).
+- Barra en reposo: color del umbral. En animación: color distintivo, y luego vuelve al del umbral.
+- Terminal estrecha: reset en segunda línea.
+- Solo tema oscuro; no se contempla el claro.
+- Umbrales actuales (70/90) se mantienen en esta tarea; el cambio a 60/80 es la Tarea 5.
+
+Próximo paso concreto: implementar `format.ts` y sus tests.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
