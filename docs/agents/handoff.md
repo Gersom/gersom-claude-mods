@@ -23,12 +23,14 @@ Hallazgos del paso 1: el motor no expone el TTL (`5m`/`1h`) a los hooks de plugi
 
 - [x] 1. Cargar `plugin-authoring` y verificar los datos de caché disponibles
 - [x] 2. Diseño fijado (arriba)
-- [ ] 3–4. Crear `mods/cache-watch/` (repo propio) con código, tests y README
-- [ ] 5. Verificar (`claude plugin validate` / `claude plugin test`)
-- [ ] 6. Publicar: repo `Gersom/claude-mod-cache-watch` y entrada en `.claude-plugin/marketplace.json`
+- [x] 3–4. Crear `mods/cache-watch/` (repo propio, commit `feat(T-13)`) con código, tests (23) y README
+- [x] 5. Verificar: validate, test y tsc limpios
+- [x] 5b. `usage-meter` ahora envuelve `next(e)` para convivir con `cache-watch` (commit en su repo, 64 tests)
+- [ ] 5c. Refinar `cache-watch` con el operador (pendiente de su visto bueno visual: `claude --plugin-dir D:\personal\claude-mods\mods\cache-watch`)
+- [x] 6. Publicado (autorizado por el operador): repo público `Gersom/claude-mod-cache-watch`, push del commit de `usage-meter` y entrada en `.claude-plugin/marketplace.json` y README del central
 - [ ] 7. Documentar cierre de tarea (solo cuando el operador lo pida)
 
-Próximo paso: delegar a ᴇsᴄʀɪᴛᴏʀ la creación del mod (pasos 3–4).
+Próximo paso: el operador revisará la UX de `cache-watch` y pedirá cambios; cerrar la tarea solo cuando lo pida.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

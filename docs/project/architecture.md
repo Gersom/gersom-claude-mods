@@ -17,7 +17,8 @@ gersom-claude-mods/                # repo central (GitHub: Gersom/gersom-claude-
 ├── .claude-plugin/
 │   └── marketplace.json           # catálogo de mods (marketplace «gersom-claude-mods»)
 ├── mods/                          # ignorada por git: cada subcarpeta es un repo propio
-│   └── usage-meter/               # recuadro con % de contexto y límites de 5 h y semanal
+│   ├── usage-meter/               # recuadro con % de contexto y límites de 5 h y semanal
+│   └── cache-watch/               # panel que indica si el caché de prompts está caliente o frío
 ├── README.md                      # presentación del central e instalación
 ├── docs/                          # documentación de contexto para agentes (este mapa)
 ├── AGENTS.md                      # orden de lectura para agentes (fuente de verdad)
