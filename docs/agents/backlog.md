@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 22
+**Próximo número de tarea:** 23
 
 ---
 
@@ -36,15 +36,22 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Desbloquea:** Tarea 16.
 - **Agregada:** 2026-10-09
 
-<!-- agent-context-kit:section=blocked -->
-## Tareas bloqueadas / pospuestas
-
 ### Tarea 14 — Refinar el mod de caché
 
-- **Descripción:** ajustar el mod de caché de la Tarea 13 tras verlo en uso (diseño, datos, rendimiento).
-- **Decisiones/temas a definir antes de empezar:** qué refinar; lo define el operador al ver el mod.
-- **Bloqueos:** [dependencia] Tarea 13 — el mod de caché aún no existe.
+- **Descripción:** refinar `cache-watch` (Tarea 13): cambiar su UX y agregarle más información.
+- **Decisiones/temas a definir antes de empezar:** qué cambios de UX y qué datos extra; lo define el operador (ideas ya habladas: % de aciertos de la última petición y de la sesión, tokens leídos y escritos de caché).
+- **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 13 — el mod de caché aún no existía.
 - **Agregada:** 2026-10-09
+
+### Tarea 22 — Borde gris oscuro en cache-watch y usage-meter
+
+- **Descripción:** agregar un borde gris oscuro (`#4b5563`) a los paneles de `cache-watch` y de `usage-meter`. Hoy el borde redondeado solo se dibuja en la terminal; en la app de escritorio no hay ninguno.
+- **Decisiones/temas a definir antes de empezar:** si el borde debe verse también en la app de escritorio (hoy no hay) o solo unificar el de la terminal; si al apilarse deben compartir un solo borde o llevar uno cada uno.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-10
+
+<!-- agent-context-kit:section=blocked -->
+## Tareas bloqueadas / pospuestas
 
 ### Tarea 16 — Refinar el mod claude-radar
 

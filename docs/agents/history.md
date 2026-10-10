@@ -9,6 +9,12 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 13 — Iniciar nuevo mod para mostrar el caché
+
+- Nació `cache-watch` (repo `Gersom/claude-mod-cache-watch`, público, en el catálogo del central): una fila sobre el prompt que dice si el caché de prompts está caliente o frío, con cuenta regresiva y color/emoji según el calor que queda. Importa porque un caché frío obliga a reescribir toda la conversación, que gasta más tokens y límite.
+- El motor no entrega el TTL (`5m`/`1h`) ni la hora de la última respuesta a los plugins: el TTL es una opción del mod (`1h` por defecto) y la hora se toma de los eventos del hilo principal. Para convivir con `usage-meter`, ambos piden primero lo que dibujan los demás y se apilan (`cache-watch` arriba); eso exigió un cambio en `usage-meter`.
+- Los cambios de UX se probaron solo con tests (23 y 64), no en una sesión real. Los commits de UX y de `usage-meter` quedaron sin `git push`; la publicación inicial sí se hizo. Ajustes de UX e información extra: Tarea 14; borde gris: Tarea 22.
+
 ## 2026-10-10 — ✅ Tarea 12 — Subir el mod usage-meter al marketplace
 
 - `usage-meter` quedó publicado en el catálogo del central `gersom-claude-mods` (fuente `github` hacia `Gersom/claude-mod-usage-meter`) y se instala de dos formas: con el central o suelto desde el repo del mod. Ambas se probaron en una configuración aislada, sin tocar la del operador; el operador confirmó que en la app de escritorio aparece en Plugins → Descubrir con el filtro Origen.

@@ -15,22 +15,9 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 13 — Iniciar nuevo mod para mostrar el caché
+Sin tarea en curso
 
-Decisiones del operador: mod aparte con su propio panel, nombre `cache-watch` (deja espacio a más datos), pasos ejecutados seguidos. Objetivo: mostrar si el caché de prompts está caliente o frío (cuenta regresiva hasta que se enfríe; frío = la próxima petición reescribe toda la conversación).
-
-Hallazgos del paso 1: el motor no expone el TTL (`5m`/`1h`) a los hooks de plugin ni la hora de la última respuesta; el TTL va como opción `userConfig` (por defecto `1h`) y la hora se toma de `session.measure`/`turn.step`/`turn.complete` del hilo principal. Panel = banda `AbovePrompt`, envolviendo lo que devuelva `next(e)` para convivir con `usage-meter`.
-
-- [x] 1. Cargar `plugin-authoring` y verificar los datos de caché disponibles
-- [x] 2. Diseño fijado (arriba)
-- [x] 3–4. Crear `mods/cache-watch/` (repo propio, commit `feat(T-13)`) con código, tests (23) y README
-- [x] 5. Verificar: validate, test y tsc limpios
-- [x] 5b. `usage-meter` ahora envuelve `next(e)` para convivir con `cache-watch` (commit en su repo, 64 tests)
-- [ ] 5c. Refinar `cache-watch` con el operador (pendiente de su visto bueno visual: `claude --plugin-dir D:\personal\claude-mods\mods\cache-watch`)
-- [x] 6. Publicado (autorizado por el operador): repo público `Gersom/claude-mod-cache-watch`, push del commit de `usage-meter` y entrada en `.claude-plugin/marketplace.json` y README del central
-- [ ] 7. Documentar cierre de tarea (solo cuando el operador lo pida)
-
-Próximo paso: el operador revisará la UX de `cache-watch` y pedirá cambios; cerrar la tarea solo cuando lo pida.
+Última cerrada: Tarea 13 (mod `cache-watch`). Pendiente de subir (`git push`): los commits de UX de `cache-watch` y el de `usage-meter` (apilado bajo otros hooks). Backlog: Tareas 14, 15 y 22 libres; 16 bloqueada por 15.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
