@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 23
+**Próximo número de tarea:** 24
 
 ---
 
@@ -42,6 +42,13 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Decisiones/temas a definir antes de empezar:** qué cambios de UX y qué datos extra; lo define el operador (ideas ya habladas: % de aciertos de la última petición y de la sesión, tokens leídos y escritos de caché).
 - **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 13 — el mod de caché aún no existía.
 - **Agregada:** 2026-10-09
+
+### Tarea 23 — Cambiar cache-watch a la barra de estado
+
+- **Descripción:** mostrar el estado del caché de `cache-watch` en la barra de estado de Claude Code (`$.ui.status(text)`) en lugar de, o además de, su panel sobre el prompt.
+- **Decisiones/temas a definir antes de empezar:** si el panel se reemplaza del todo o se conserva como opción; qué texto lleva la barra (emoji, «Caliente», cuenta regresiva) y si admite colores; cómo convive con otra barra de estado que el operador ya use; qué pasa con el borde de la Tarea 22 (en la barra no aplica).
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-10
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas

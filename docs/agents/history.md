@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 22 — Borde gris oscuro en cache-watch y usage-meter
+
+- Los paneles de `cache-watch` y `usage-meter` llevan el mismo borde redondeado gris oscuro (`#4b5563`) en todas las superficies, uno independiente por panel; antes solo la terminal lo tenía y el escritorio no. Se quitó la condición por superficie para que sea un solo comportamiento, y `usage-meter` ahora descuenta siempre lo que el borde ocupa.
+- Verificado con tests (23 y 64) y `validate`; no se vio dibujado en una sesión real. Con la Tarea 23 (barra de estado) el borde de `cache-watch` podría dejar de aplicar.
+
 ## 2026-10-10 — ✅ Tarea 13 — Iniciar nuevo mod para mostrar el caché
 
 - Nació `cache-watch` (repo `Gersom/claude-mod-cache-watch`, público, en el catálogo del central): una fila sobre el prompt que dice si el caché de prompts está caliente o frío, con cuenta regresiva y color/emoji según el calor que queda. Importa porque un caché frío obliga a reescribir toda la conversación, que gasta más tokens y límite.
