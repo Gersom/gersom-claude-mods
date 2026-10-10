@@ -15,9 +15,25 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 7 — Mejorar la UX
 
-Última cerrada: Tarea 8 (categorías del contexto). Backlog: Tarea 7 (mejorar la UX).
+Descripción: mejorar la experiencia visual y de uso del panel de `usage-meter`. Punto de partida: acercar el diseño a la captura de `/context` que adjuntó el operador (recuadro con `◆` y título en negrita, recuadro de porcentaje con color de umbral, barra a todo el ancho con la parte vacía en gris oscuro).
+
+Alcance elegido por el operador: cabecera estilo captura, una sola barra por medida, leyenda en columnas y separación entre medidas. Cuando lo vea aplicado dirá si hay que cambiar algo más.
+
+### Plan (aprobado; ejecución seguida)
+
+- [x] 1. `format.ts`: `barParts` con ancho variable, `percentBadge` (` 42% `), `head`/`inlineFits` ajustados a la nueva cabecera y `legendRows(slices, columns)` que reparte la leyenda en columnas alineadas.
+- [x] 2. `register.tsx`: cabecera con `◆` en el color de la medida, etiqueta en negrita y a la derecha el texto de restablecimiento / tokens y el % como recuadro con fondo del color de umbral; sin título «Uso»; línea en blanco entre medidas.
+- [x] 3. `register.tsx`: una sola barra a todo el ancho por medida (vacío en gris oscuro); en Contexto, la segmentada reemplaza a la de 10 celdas, y la leyenda va en columnas.
+- [x] 4. Tests (39/39, validación OK) y README (diseño y ejemplo).
+- [ ] 5. Documentar cierre de tarea.
+
+Próximo paso: el operador lo ve aplicado en sesión real (`bun run usage-meter`; no verificado a mano), dice si hay que cambiar algo más y pide cerrar; entonces, el paso 5.
+
+Contexto: `Row.bar` y `bar()` ya no se usan al dibujar (solo los tests); se pueden limpiar si el operador lo pide.
+
+Última cerrada: Tarea 8 (categorías del contexto). Backlog sin tareas libres.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

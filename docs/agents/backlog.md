@@ -28,12 +28,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 7 — Mejorar la UX
-
-- **Descripción:** mejorar la experiencia visual y de uso del panel de `usage-meter`.
-- **Decisiones/temas a definir antes de empezar:** qué se quiere mejorar exactamente (hay que preguntarle al operador). Punto de partida: acercar el diseño a la captura de `/context` que adjuntó (recuadro con `◆` y título en negrita, recuadro de porcentaje con color de umbral, barra a todo el ancho con la parte vacía en gris oscuro).
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-09
+Ninguna.
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
