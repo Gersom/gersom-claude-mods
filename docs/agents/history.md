@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 19 — Crear repo hijo usage-meter
+
+- `usage-meter` salió a su propio repo público, `Gersom/claude-mod-usage-meter`, con sus 25 commits de historial (extraídos con `git subtree split`) y el repo vive en `mods/usage-meter/`; el central dejó de versionarlo. El prefijo `claude-mod-` agrupa los repos de la familia y se ve en la lista de GitHub; el nombre del plugin sigue siendo `usage-meter`.
+- Se ignoran en el mod `tsconfig.json` y `.claude-plugin/types/` porque Claude Code los genera al cargarlo. Un clon limpio valida y pasa los 63 tests sin ellos; no se probó cargarlo con `--plugin-dir` desde el clon. La regla de commits entre repos está en [`rules.md`](./rules.md).
+
 ## 2026-10-10 — ✅ Tarea 18 — Preparar repo central para marketplace
 
 - `claude-mods` pasó a ser el repo central `Gersom/gersom-claude-mods` (renombrado con `gh`): lleva el catálogo (`.claude-plugin/marketplace.json`, hoy sin plugins) y la documentación, y cada mod vive en su propio repo dentro de `mods/`, ignorada por git. Así cada mod se versiona y se actualiza por separado, y desde el central se puede leer y editar todos.
