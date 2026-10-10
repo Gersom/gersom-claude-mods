@@ -15,9 +15,23 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 18 — Preparar repo central para marketplace
 
-Última cerrada: Tarea 17 (título corto «Límite 5h» en usage-meter). Backlog: Tareas 12, 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
+Convertir `claude-mods` en el repo central `Gersom/gersom-claude-mods`. Modo: paso a paso, con confirmación del operador después de cada paso. El operador autorizó expresamente renombrar el repo con `gh` (cuenta `Gersom`).
+
+### Plan
+
+- [x] 1. Cambio de nombre: repo renombrado con `gh` a `Gersom/gersom-claude-mods` y `origin` actualizado a `git@github.com:Gersom/gersom-claude-mods.git` (verificado con `git ls-remote`). Quedan menciones del nombre viejo en `README.md`, `docs/README.md`, `architecture.md` y `package.json` (`name`), que se ajustan en los pasos 4 y 5.
+- [x] 2. Ignorar `mods/` en `.gitignore` (el `git rm --cached` de `mods/usage-meter` va en la Tarea 19).
+- [x] 3. `.claude-plugin/marketplace.json` con `name: "gersom-claude-mods"`, `owner.name: "Gersom"` y `plugins: []`.
+- [x] 4. `README.md` del central con la línea `/plugin marketplace add Gersom/gersom-claude-mods`.
+- [x] 5. Actualizar `architecture.md`, `docs/README.md` y la Regla 9 de `rules.md` (commits en varios repos; `mods/` fuera de este repo).
+- [x] 6. Validar con `claude plugin validate .`.
+- [ ] 7. Documentar cierre de tarea (solo si el operador lo pide).
+
+Próximo paso concreto: paso 7, documentar el cierre, solo cuando el operador lo pida. La validación (`claude plugin validate .`) pasa con un aviso esperado: el catálogo no tiene plugins hasta la Tarea 12.
+
+Pendientes ya creados: Tareas 19 (repo hijo `usage-meter`), 20 (prepararlo; bloqueada por la 19) y 12 (publicar; bloqueada por 18, 19 y 20). Backlog libre: 13, 15 y 19; 14, 16, 20 y 12 bloqueadas.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

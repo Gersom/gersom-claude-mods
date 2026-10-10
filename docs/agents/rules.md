@@ -27,7 +27,7 @@ Vienen con el skill y aplican a cualquier proyecto; las reglas de proceso adicio
 
 ## Reglas específicas de este proyecto
 
-- Ninguna definida todavía.
+- **Cada mod es un repo aparte.** `mods/<nombre>/` tiene su propio `.git` y este repo (el central) lo ignora. Complementa la Regla 9: los commits del código de un mod se hacen en el repo del mod (con `cd mods/<nombre>`), con el mismo formato `tipo(T-N): descripción`; los commits de documentación de contexto, de `handoff.md`/`backlog.md`/`history.md` y del catálogo van en el central. `git status` del central no muestra cambios de los mods: revisar cada repo antes de dar por terminado un trabajo.
 
 ### Qué NO tocar sin autorización explícita
 

@@ -1,6 +1,6 @@
-# claude-mods
+# gersom-claude-mods
 
-Repo de mods de Claude Code: colección personal de skills y extensiones para Claude Code.
+Repo central de los mods de Claude Code de Gersom: contiene el catálogo (marketplace) y la documentación; cada mod vive en su propio repo dentro de `mods/`.
 
 **Operador:** la persona dueña del proyecto que le pide tareas al agente, aprueba decisiones y a quien se le pregunta cuando algo no está definido.
 

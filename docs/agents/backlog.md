@@ -21,19 +21,19 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 18
+**Próximo número de tarea:** 21
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 12 — Subir el mod usage-meter al marketplace
+### Tarea 19 — Crear repo hijo usage-meter
 
-- **Descripción:** publicar `usage-meter` en un marketplace de plugins de Claude Code, con su línea de instalación en el README (el validador la pide).
-- **Decisiones/temas a definir antes de empezar:** en qué marketplace (uno propio en el repo o uno existente); nombre y `<owner>/<repo>`; licencia y versión; si se publica antes o después de las Tareas 10 y 11.
+- **Descripción:** sacar `mods/usage-meter` a su propio repo (`Gersom/usage-meter`), con su `.git` dentro de `mods/usage-meter/` en el central (ignorado por este).
+- **Decisiones/temas a definir antes de empezar:** si se conserva el historial del mod (hoy vive en el historial del central); quién crea el repo remoto (el operador, o `gh` con autorización expresa y la cuenta a usar). Al mover el mod: hacer `git rm --cached -r mods/usage-meter` en el central y llevar al `.gitignore` del repo del mod las entradas que hoy tiene el central (`tsconfig.json` y `.claude-plugin/types/`, generados por Claude Code al cargar el mod).
 - **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-09
+- **Agregada:** 2026-10-10
 
 ### Tarea 13 — Iniciar nuevo mod para mostrar el caché
 
@@ -53,6 +53,20 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
+
+### Tarea 12 — Subir el mod usage-meter al marketplace
+
+- **Descripción:** publicar `usage-meter` en el marketplace propio (repo central `Gersom/gersom-claude-mods`), con su línea de instalación en el README (el validador la pide), versión 1.0.0 y licencia MIT.
+- **Decisiones/temas a definir antes de empezar:** definidas: marketplace propio en el repo central, un repo por mod, MIT, 1.0.0, usuario de GitHub `Gersom`. Por verificar: cómo se ve el marketplace en la app de escritorio; si el validador exige la línea de instalación.
+- **Bloqueos:** [dependencia] Tareas 18, 19 y 20 — el repo central y el repo de `usage-meter` aún no están preparados.
+- **Agregada:** 2026-10-09
+
+### Tarea 20 — Preparar repo usage-meter para el marketplace
+
+- **Descripción:** dejar el repo de `usage-meter` listo para publicarse: `LICENSE` MIT, `license`, `repository`, `homepage` y `version: "1.0.0"` en `plugin.json`, su propio `marketplace.json` de una entrada (instalación suelta), README con la línea de instalación y el requisito de Claude Code 2.1.287+, y enlace de donación si el operador lo quiere.
+- **Decisiones/temas a definir antes de empezar:** enlace de PayPal para donaciones (si va); nombre del marketplace individual.
+- **Bloqueos:** [dependencia] Tarea 19 — el repo de `usage-meter` aún no existe.
+- **Agregada:** 2026-10-10
 
 ### Tarea 14 — Refinar el mod de caché
 
