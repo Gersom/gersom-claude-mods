@@ -1,14 +1,32 @@
-# claude-mods
+# gersom-claude-mods
 
-Colección de mods exclusivamente para Claude Code. Cada mod vive en su propia carpeta dentro de `mods/`:
+Colección de mods de Gersom, exclusivamente para Claude Code. Este repo es el **central**: su `.claude-plugin/marketplace.json` es el catálogo y cada mod vive en su propio repo.
+
+## Instalar
+
+Agregar el marketplace una sola vez:
 
 ```
-mods/
-└── <nombre-del-mod>/
-    ├── README.md   # qué hace el mod (definición)
-    └── ...         # archivos del mod
+/plugin marketplace add Gersom/gersom-claude-mods
 ```
 
+Después, instalar el mod que se quiera, por nombre:
+
+```
+/plugin install <mod>@gersom-claude-mods
+```
+
+Cada mod se instala por separado y se actualiza desde su propio repo.
+
+## Mods
+
+| Mod | Qué hace | Repo |
+|---|---|---|
+| — | Todavía no hay mods publicados. | — |
+
+## Para quien desarrolla
+
+- Cada mod es un repo propio en `mods/<nombre>/` (`kebab-case`), con su `.git`; esta carpeta está en `.gitignore` y este repo no versiona los mods.
 - El `README.md` de cada mod es obligatorio y define qué hace.
-- Nombres de carpeta en minúsculas con guiones (`kebab-case`).
+- Para agregar un mod al catálogo: una entrada en `plugins` de `.claude-plugin/marketplace.json` con `source` de tipo `github`.
 - Documentación de contexto para agentes: [`docs/README.md`](./docs/README.md).
