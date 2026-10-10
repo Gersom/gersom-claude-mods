@@ -30,3 +30,7 @@ Cada mod se instala por separado y se actualiza desde su propio repo.
 - El `README.md` de cada mod es obligatorio y define qué hace.
 - Para agregar un mod al catálogo: una entrada en `plugins` de `.claude-plugin/marketplace.json` con `source` de tipo `github`.
 - Documentación de contexto para agentes: [`docs/README.md`](./docs/README.md).
+
+## Licencia
+
+[MIT](./LICENSE) © Gersom. Cada mod lleva su propia licencia en su repo.
