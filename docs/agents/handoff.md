@@ -26,10 +26,10 @@ Publicar `usage-meter` en el catálogo del central (`Gersom/gersom-claude-mods`)
 - [x] 3. Validar el central con `claude plugin validate .`.
 - [x] 4. Commit y `push` del central (el catálogo se lee desde GitHub, así que hay que subirlo para probar).
 - [x] 5. Probar la instalación real desde GitHub en una configuración aislada (`CLAUDE_CONFIG_DIR` temporal), sin tocar la del operador: `marketplace add Gersom/gersom-claude-mods` e `install usage-meter@gersom-claude-mods`, y lo mismo con el repo del mod.
-- [ ] 6. El operador revisa cómo se ve en la app de escritorio (menú de plugins), que no puedo ver desde acá.
+- [x] 6. El operador revisa cómo se ve en la app de escritorio (menú de plugins), que no puedo ver desde acá.
 - [ ] 7. Documentar cierre de tarea (solo si el operador lo pide).
 
-Próximo paso concreto: paso 6, el operador revisa la app de escritorio (menú de plugins); luego paso 7, documentar el cierre, solo cuando lo pida. Hecho: entrada de `usage-meter` en el catálogo (commit `feat(T-12)`, con push) y README del central; `validate` pasa. Instalación real probada en una configuración aislada, sin tocar la del operador: el central (`install usage-meter@gersom-claude-mods`) y el repo suelto (`install usage-meter --marketplace Gersom/claude-mod-usage-meter`) instalaron la versión 1.0.0.
+Próximo paso concreto: paso 7, documentar el cierre, solo cuando lo pida. Hecho: entrada de `usage-meter` en el catálogo (commit `feat(T-12)`, con push) y README del central; `validate` pasa. El operador verificó la app de escritorio (aparece en Plugins → Descubrir con el filtro Origen) y las instrucciones quedaron en los README. Instalación real probada en una configuración aislada, sin tocar la del operador: el central (`install usage-meter@gersom-claude-mods`) y el repo suelto (`install usage-meter --marketplace Gersom/claude-mod-usage-meter`) instalaron la versión 1.0.0.
 
 Backlog: Tareas 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
 

@@ -18,6 +18,11 @@ Después, instalar el mod que se quiera, por nombre:
 
 Cada mod se instala por separado y se actualiza desde su propio repo.
 
+### En la app de escritorio
+
+1. Agregar el marketplace: **Configuración → Plugins → Añadir → Añadir marketplace → Añadir desde un repositorio**, pegar la URL del repo (`https://github.com/Gersom/gersom-claude-mods`) y pulsar **Sincronizar**.
+2. Encontrar los mods: en **Plugins → Descubrir**, abrir el filtro y elegir **Origen → `gersom-claude-mods`**. Los mods del catálogo aparecen listados y se instalan desde ahí.
+
 ## Mods
 
 | Mod | Qué hace | Repo |
