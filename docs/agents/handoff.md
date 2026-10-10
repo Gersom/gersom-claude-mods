@@ -17,7 +17,7 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 
 Sin tarea en curso
 
-Última cerrada: Tarea 20 (repo `usage-meter` listo para el marketplace). Backlog: Tareas 12, 13, 15 y 21 libres; 14 y 16 bloqueadas por 13 y 15.
+Última cerrada: Tarea 21 (LICENSE MIT del repo central). Backlog: Tareas 12, 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

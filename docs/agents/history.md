@@ -9,6 +9,10 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 21 — Agregar LICENSE MIT al repo central
+
+- El central `gersom-claude-mods` ahora lleva su `LICENSE` MIT (Gersom, 2026) y una sección «Licencia» en el README, que aclara que cada mod tiene la suya en su repo. Es lo que faltaba para que el repo público, que será el catálogo, tenga licencia explícita como los mods.
+
 ## 2026-10-10 — ✅ Tarea 20 — Preparar repo usage-meter para el marketplace
 
 - `Gersom/claude-mod-usage-meter` quedó listo para publicarse: `LICENSE` MIT, versión 1.0.0 con `license`, `repository` y `homepage`, un `marketplace.json` de un plugin (nombre `usage-meter`) para instalarlo suelto, y README con la línea de instalación, el requisito de Claude Code 2.1.287+, la licencia y el enlace de donación.

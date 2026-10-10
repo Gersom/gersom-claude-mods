@@ -51,13 +51,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 20 — el repo de `usage-meter` aún no está preparado para publicarse.
 - **Agregada:** 2026-10-09
 
-### Tarea 21 — Agregar LICENSE MIT al repo central
-
-- **Descripción:** agregar el `LICENSE` MIT (a nombre de Gersom, año 2026) a `gersom-claude-mods` y mencionar la licencia en su `README.md`.
-- **Decisiones/temas a definir antes de empezar:** Ninguno; MIT y repo público ya decididos por el operador.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-10
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
