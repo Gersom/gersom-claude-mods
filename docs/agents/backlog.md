@@ -28,14 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 13 — Iniciar nuevo mod para mostrar el caché
-
-- **Descripción:** crear un mod nuevo, junto a `usage-meter`, que muestre el estado del caché de prompts de la sesión.
-- **Decisiones/temas a definir antes de empezar:** qué es exactamente "el caché" y qué datos entrega la API (p. ej. `cache_read_input_tokens` y `cache_creation_input_tokens` en el uso de cada respuesta); nombre del mod; si va en su propio panel o dentro de `usage-meter`.
-- **Bloqueos:** Ninguno.
-- **Desbloquea:** Tarea 14.
-- **Agregada:** 2026-10-09
-
 ### Tarea 15 — Iniciar nuevo mod claude-radar
 
 - **Descripción:** construir el plugin `claude-radar`, un monitor visual pasivo del agente principal y sus subagentes, según el documento [`docs/claude-radar.md`](../claude-radar.md).

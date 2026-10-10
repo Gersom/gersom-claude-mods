@@ -15,9 +15,20 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 13 — Iniciar nuevo mod para mostrar el caché
 
-Última cerrada: Tarea 12 (usage-meter publicado en el marketplace). Backlog: Tareas 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
+Decisiones del operador: mod aparte con su propio panel, nombre `cache-watch` (deja espacio a más datos), pasos ejecutados seguidos. Objetivo: mostrar si el caché de prompts está caliente o frío (cuenta regresiva hasta que se enfríe; frío = la próxima petición reescribe toda la conversación).
+
+Hallazgos del paso 1: el motor no expone el TTL (`5m`/`1h`) a los hooks de plugin ni la hora de la última respuesta; el TTL va como opción `userConfig` (por defecto `1h`) y la hora se toma de `session.measure`/`turn.step`/`turn.complete` del hilo principal. Panel = banda `AbovePrompt`, envolviendo lo que devuelva `next(e)` para convivir con `usage-meter`.
+
+- [x] 1. Cargar `plugin-authoring` y verificar los datos de caché disponibles
+- [x] 2. Diseño fijado (arriba)
+- [ ] 3–4. Crear `mods/cache-watch/` (repo propio) con código, tests y README
+- [ ] 5. Verificar (`claude plugin validate` / `claude plugin test`)
+- [ ] 6. Publicar: repo `Gersom/claude-mod-cache-watch` y entrada en `.claude-plugin/marketplace.json`
+- [ ] 7. Documentar cierre de tarea (solo cuando el operador lo pida)
+
+Próximo paso: delegar a ᴇsᴄʀɪᴛᴏʀ la creación del mod (pasos 3–4).
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
