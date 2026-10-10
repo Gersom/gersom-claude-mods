@@ -15,9 +15,13 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 9 — Limpia de código muerto
 
-Última cerrada: Tarea 7 (mejorar la UX). Pendiente menor, solo si el operador lo pide: `Row.bar`, `bar()`, `barParts` y `Slice.cells` ya no se usan al dibujar (solo los tests). Backlog sin tareas libres.
+Tarea pequeña, sin plan: quitar de `usage-meter` lo que el rediseño de la Tarea 7 dejó sin uso al dibujar: `bar()`, `barParts()`, `Row.bar` y `Slice.cells` (con el reparto de celdas de `slicesOf`), más lo que quede huérfano (constantes y parámetros), y sus tests.
+
+Hecho (tests 50/50, validación OK): quitados `bar()`, `barParts()`, `BAR_CELLS`, `Row.bar`, `Slice.cells` y el reparto de celdas de `slicesOf` (que ya no recibe el ancho), `BAR_MIN` y sus tests. Próximo paso: el operador revisa y pide cerrar la tarea.
+
+Última cerrada: Tarea 7 (mejorar la UX). Backlog sin tareas libres.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

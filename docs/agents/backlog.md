@@ -28,12 +28,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 9 — Limpia de código muerto
-
-- **Descripción:** quitar de `usage-meter` lo que el rediseño de la Tarea 7 dejó sin uso al dibujar: `bar()`, `barParts()`, `Row.bar` y `Slice.cells` (con el reparto de celdas de `slicesOf`), más lo que quede huérfano (constantes y parámetros), y sus tests.
-- **Decisiones/temas a definir antes de empezar:** Ninguno.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-09
+Ninguna.
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
