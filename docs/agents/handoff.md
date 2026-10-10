@@ -17,19 +17,21 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 
 Tarea 10 — Multi idioma para usage-meter
 
-Descripción: que `usage-meter` muestre sus textos (títulos, `Restablece en`, `Categorías`, `Compactar`, `Una línea`, días y meses, `Libre`, `Búfer`…) en más de un idioma, hoy solo en español.
+Descripción: que `usage-meter` muestre sus textos en español e inglés según `settings.language`, sin que ningún agente ni subagente traduzca nada (diccionarios fijos en el mod, sin llamadas a modelos ni tokens).
 
-### Plan (pendiente de aprobación del operador)
+Decisiones del operador: idiomas español e inglés; **por defecto, inglés** si no se detecta; automático por `settings.language` y además un botón `[ES]`/`[EN]` para cambiarlo a mano (no persiste: al reiniciar vuelve al automático; la persistencia con `$.store` no se pidió y no se hizo).
 
-- [ ] 1. `hooks/i18n.ts`: diccionarios por idioma (`es`, `en`) con todas las cadenas visibles, `detectLang` (puro) y los tipos en `types/index.d.ts`.
-- [ ] 2. `format.ts`: las funciones que escriben texto (etiquetas, `relative`, `compactRelative`, fechas, `resetText`, `tokensText`, nombres de leyenda) reciben los textos del idioma en vez de tenerlos fijos.
-- [ ] 3. `register.tsx`: leer el idioma al iniciar la sesión (`atom` `lang`) y pasarlo al dibujar; botones y textos sueltos salen del diccionario.
-- [ ] 4. Tests (cada idioma) y README.
+### Plan (aprobado; ejecución seguida)
+
+- [x] 1. `hooks/i18n.ts` (diccionarios `es`/`en`, `detectLang`, `otherLang`, `DEFAULT_LANG = 'en'`) y tipos `Lang` y `lang` en `types/index.d.ts`.
+- [x] 2. `format.ts`: las funciones que escriben texto reciben `Texts` por parámetro (`rowsOf`, `rowOf`, `contextRow`, `resetText`, `relative`, `shortDate`, `longDate`, `tokensText`, `slicesOf`).
+- [x] 3. `register.tsx`: `atom` `lang` (`null` hasta leerlo); `ensureLang` lee `$.settings.read()` en `session.start` y `session.measure`; botón `[ES]`/`[EN]` al pie; botones y `Categorías` salen del diccionario.
+- [x] 4. Tests (63/63, validación OK, sin verificar a mano en la app) y README (sección «Idioma»).
 - [ ] 5. Documentar cierre de tarea (solo cuando el operador lo pida).
 
-Próximo paso: el operador responde las decisiones abiertas y aprueba el plan; luego, paso 1.
+Verificado: `settings.language` es texto libre (el esquema oficial de `settings.json` lo describe con ejemplos en inglés: `japanese`, `spanish`, `french`) y el del operador es `"Español"` (`~/.claude/settings.json`, línea 21), por eso `detectLang` ignora mayúsculas y tildes y reconoce `es`, `es-MX`, `spanish`, `castellano`; un idioma como `Estonian` no se confunde con español (se compara la primera palabra entera). `claude plugin validate` lista las llamadas del mod: reloj, `session.usage`, `settings.read`, estado y UI; ninguna a modelos. Sin verificar: que `$.settings.read()` en una sesión real devuelva `language` fusionado (solo probado con el mock de los tests).
 
-Hallazgos verificados en los tipos de la API (`types/claude-code/index.d.ts`): no hay una API de `locale` ni de idioma de la interfaz. Sí hay `$.settings.read()` (la clave `language` de `settings.json`, si el operador la tiene; `3563`) y `$.env.get('LANG')` (nombre literal; `3588`). Sin verificar: qué valores trae `language` en la práctica (¿`spanish`, `español`, `es`?) y si `LANG` existe en Windows.
+Próximo paso: el operador lo prueba en sesión real (`bun run usage-meter`; con su configuración debería salir en español) y pide cerrar la tarea.
 
 Última cerrada: Tarea 9 (limpia de código muerto). Backlog: Tareas 11 a 16 (14 y 16 bloqueadas).
 
