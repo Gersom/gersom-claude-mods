@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 21
+**Próximo número de tarea:** 22
 
 ---
 
@@ -54,10 +54,17 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [dependencia] Tareas 19 y 20 — el repo de `usage-meter` aún no existe ni está preparado (el central ya quedó listo en la Tarea 18).
 - **Agregada:** 2026-10-09
 
+### Tarea 21 — Agregar LICENSE MIT al repo central
+
+- **Descripción:** agregar el `LICENSE` MIT (a nombre de Gersom, año 2026) a `gersom-claude-mods` y mencionar la licencia en su `README.md`.
+- **Decisiones/temas a definir antes de empezar:** Ninguno; MIT y repo público ya decididos por el operador.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-10
+
 ### Tarea 20 — Preparar repo usage-meter para el marketplace
 
 - **Descripción:** dejar el repo de `usage-meter` listo para publicarse: `LICENSE` MIT, `license`, `repository`, `homepage` y `version: "1.0.0"` en `plugin.json`, su propio `marketplace.json` de una entrada (instalación suelta), README con la línea de instalación y el requisito de Claude Code 2.1.287+, y enlace de donación si el operador lo quiere.
-- **Decisiones/temas a definir antes de empezar:** enlace de PayPal para donaciones (si va); nombre del marketplace individual.
+- **Decisiones/temas a definir antes de empezar:** enlace de PayPal para donaciones (si va); nombre del marketplace individual. Repo del mod: `Gersom/claude-mod-usage-meter` (público).
 - **Bloqueos:** [dependencia] Tarea 19 — el repo de `usage-meter` aún no existe.
 - **Agregada:** 2026-10-10
 

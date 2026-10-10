@@ -28,7 +28,7 @@ gersom-claude-mods/                # repo central (GitHub: Gersom/gersom-claude-
 
 El repo es el **central** de una colección de mods exclusivamente para Claude Code. Cada mod es un repo propio, clonado en `mods/<nombre>/` (kebab-case) con su `README.md` que define qué hace; `mods/` está en `.gitignore`, así que el central no versiona los mods pero se pueden leer y editar desde acá. El catálogo es `.claude-plugin/marketplace.json`, con una entrada por mod y fuente `github`. `.claude/` es solo para las herramientas que usa este repo (como el skill local), no para los mods.
 
-Mientras un mod no tenga su repo propio, sus archivos siguen versionados en el central (hoy, `usage-meter`; ver Tarea 19 en [`backlog.md`](../agents/backlog.md)).
+Los repos de los mods se llaman `claude-mod-<nombre>` en GitHub (`Gersom/claude-mod-usage-meter`); la carpeta local y el nombre del plugin son solo `<nombre>`.
 
 ## Dónde va cada cosa nueva
 
