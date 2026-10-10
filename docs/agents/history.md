@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 12 — Subir el mod usage-meter al marketplace
+
+- `usage-meter` quedó publicado en el catálogo del central `gersom-claude-mods` (fuente `github` hacia `Gersom/claude-mod-usage-meter`) y se instala de dos formas: con el central o suelto desde el repo del mod. Ambas se probaron en una configuración aislada, sin tocar la del operador; el operador confirmó que en la app de escritorio aparece en Plugins → Descubrir con el filtro Origen.
+- Los README (central y mod) documentan la instalación en terminal y en la app de escritorio. No se probó instalar desde la propia app ni que el panel se dibuje con el plugin instalado desde el marketplace. Estructura en [`architecture.md`](../project/architecture.md).
+
 ## 2026-10-10 — ✅ Tarea 21 — Agregar LICENSE MIT al repo central
 
 - El central `gersom-claude-mods` ahora lleva su `LICENSE` MIT (Gersom, 2026) y una sección «Licencia» en el README, que aclara que cada mod tiene la suya en su repo. Es lo que faltaba para que el repo público, que será el catálogo, tenga licencia explícita como los mods.
