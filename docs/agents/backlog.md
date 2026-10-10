@@ -21,17 +21,17 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 8
+**Próximo número de tarea:** 9
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 6 — Añadir tokens y categorías para el contexto
+### Tarea 8 — Añadir categorías al contexto
 
-- **Descripción:** en la fila de contexto de `usage-meter`, mostrar los tokens usados y la ventana (ej. `90k de 1M`) y el desglose por categorías (prompt del sistema, herramientas, MCP, agentes, memoria, skills, mensajes, libre), como en el `/context` de Claude Code.
-- **Decisiones/temas a definir antes de empezar:** de dónde salen las categorías (`$.session.usage()` / `session.measure` solo entregan `window`, `tokens` y `percent`; hay que verificar si la API expone el desglose); cómo se dibuja (barra segmentada y leyenda) y cómo convive con el README, que hoy deja los tokens fuera de alcance. Se hace por partes: primero tokens, después categorías.
+- **Descripción:** en la fila de contexto de `usage-meter`, mostrar el desglose por categorías (prompt del sistema, herramientas, MCP, agentes, memoria, skills, mensajes, libre) como en el `/context` de Claude Code. Sale de la Tarea 6, que añade solo los tokens.
+- **Decisiones/temas a definir antes de empezar:** de dónde salen las categorías (`ContextCategory` en `types/claude-code/index.d.ts`; `session.measure` solo entrega `window`, `tokens` y `percent`, hay que verificar si la API del hook las expone); cómo se dibuja (barra segmentada y leyenda).
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-09
 

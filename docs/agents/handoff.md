@@ -15,9 +15,18 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 6 — Añadir tokens al contexto (las categorías pasaron a la Tarea 8)
 
-Última cerrada: Tarea 5 (umbrales de color a 60 y 80). Rama `feat/cambiar-porcentajes`, creada desde `feat/cambiar-diseno`; ambas ramas aún no están en `main`. Backlog sin tareas libres.
+### Plan (aprobado; ejecución seguida)
+
+- [x] 1. Ampliar `Usage.context` a `{ percent, tokens, window }` (`types/index.d.ts`, `register.tsx`, `contextRow` en `format.ts`).
+- [x] 2. Mostrar en la fila de contexto `84k de 200k` (`compactTokens` y `tokensText` en `format.ts`), en gris atenuado tras el porcentaje.
+- [x] 3. Tests (27/27, validación OK) y README.
+- [ ] 4. Documentar cierre de tarea.
+
+Próximo paso: el operador revisa el resultado (sesión real con `bun run usage-meter`, no verificado a mano) y pide cerrar la tarea; entonces, el paso 4.
+
+Última cerrada: Tarea 5 (umbrales de color a 60 y 80). Backlog: Tareas 7 (mejorar la UX) y 8 (categorías del contexto).
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
