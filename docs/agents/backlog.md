@@ -28,13 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 19 — Crear repo hijo usage-meter
-
-- **Descripción:** sacar `mods/usage-meter` a su propio repo (`Gersom/usage-meter`), con su `.git` dentro de `mods/usage-meter/` en el central (ignorado por este).
-- **Decisiones/temas a definir antes de empezar:** si se conserva el historial del mod (hoy vive en el historial del central); quién crea el repo remoto (el operador, o `gh` con autorización expresa y la cuenta a usar). Al mover el mod: hacer `git rm --cached -r mods/usage-meter` en el central y llevar al `.gitignore` del repo del mod las entradas que hoy tiene el central (`tsconfig.json` y `.claude-plugin/types/`, generados por Claude Code al cargar el mod).
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-10
-
 ### Tarea 13 — Iniciar nuevo mod para mostrar el caché
 
 - **Descripción:** crear un mod nuevo, junto a `usage-meter`, que muestre el estado del caché de prompts de la sesión.
@@ -58,7 +51,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 - **Descripción:** publicar `usage-meter` en el marketplace propio (repo central `Gersom/gersom-claude-mods`), con su línea de instalación en el README (el validador la pide), versión 1.0.0 y licencia MIT.
 - **Decisiones/temas a definir antes de empezar:** definidas: marketplace propio en el repo central, un repo por mod, MIT, 1.0.0, usuario de GitHub `Gersom`. Por verificar: cómo se ve el marketplace en la app de escritorio; si el validador exige la línea de instalación.
-- **Bloqueos:** [dependencia] Tareas 18, 19 y 20 — el repo central y el repo de `usage-meter` aún no están preparados.
+- **Bloqueos:** [dependencia] Tareas 19 y 20 — el repo de `usage-meter` aún no existe ni está preparado (el central ya quedó listo en la Tarea 18).
 - **Agregada:** 2026-10-09
 
 ### Tarea 20 — Preparar repo usage-meter para el marketplace

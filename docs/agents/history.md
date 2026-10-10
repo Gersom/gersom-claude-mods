@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 18 — Preparar repo central para marketplace
+
+- `claude-mods` pasó a ser el repo central `Gersom/gersom-claude-mods` (renombrado con `gh`): lleva el catálogo (`.claude-plugin/marketplace.json`, hoy sin plugins) y la documentación, y cada mod vive en su propio repo dentro de `mods/`, ignorada por git. Así cada mod se versiona y se actualiza por separado, y desde el central se puede leer y editar todos.
+- Para no tocar la Regla 9 (fija) se agregó la regla específica «Cada mod es un repo aparte» en [`rules.md`](./rules.md): el código del mod se commitea en su repo; docs y catálogo, en el central. Validación pasa con el aviso esperado de catálogo vacío. `mods/usage-meter` sigue versionado acá hasta la Tarea 19.
+
 ## 2026-10-10 — ✅ Tarea 17 — Título corto «Límite 5h» en la vista de una línea
 
 - En la vista `[=] Una línea` de `usage-meter`, el título en español pasa de `Límite 5 horas` a `Límite 5h`, para ahorrar ancho en una línea que se corta si no cabe. El título completo (`Límite de 5 horas`) y el texto en inglés no cambian. Tests (63/63) pasan.

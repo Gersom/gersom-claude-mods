@@ -15,23 +15,23 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 18 — Preparar repo central para marketplace
+Tarea 19 — Crear repo hijo usage-meter
 
-Convertir `claude-mods` en el repo central `Gersom/gersom-claude-mods`. Modo: paso a paso, con confirmación del operador después de cada paso. El operador autorizó expresamente renombrar el repo con `gh` (cuenta `Gersom`).
+Sacar `mods/usage-meter` a su propio repo `Gersom/usage-meter`, con su `.git` dentro de `mods/usage-meter/` y el central dejando de versionarlo. **Plan propuesto, pendiente de aprobación del operador** (no se ejecutó nada; falta que decida los puntos de abajo y si va seguido o paso a paso).
 
 ### Plan
 
-- [x] 1. Cambio de nombre: repo renombrado con `gh` a `Gersom/gersom-claude-mods` y `origin` actualizado a `git@github.com:Gersom/gersom-claude-mods.git` (verificado con `git ls-remote`). Quedan menciones del nombre viejo en `README.md`, `docs/README.md`, `architecture.md` y `package.json` (`name`), que se ajustan en los pasos 4 y 5.
-- [x] 2. Ignorar `mods/` en `.gitignore` (el `git rm --cached` de `mods/usage-meter` va en la Tarea 19).
-- [x] 3. `.claude-plugin/marketplace.json` con `name: "gersom-claude-mods"`, `owner.name: "Gersom"` y `plugins: []`.
-- [x] 4. `README.md` del central con la línea `/plugin marketplace add Gersom/gersom-claude-mods`.
-- [x] 5. Actualizar `architecture.md`, `docs/README.md` y la Regla 9 de `rules.md` (commits en varios repos; `mods/` fuera de este repo).
-- [x] 6. Validar con `claude plugin validate .`.
+- [ ] 1. Extraer el historial del mod (25 commits) con `git subtree split --prefix=mods/usage-meter` a una rama temporal del central.
+- [ ] 2. Crear el repo remoto `Gersom/usage-meter` con `gh` (requiere autorización expresa del operador y definir visibilidad).
+- [ ] 3. Inicializar el repo del mod: mover los archivos a un repo con su `.git` en `mods/usage-meter/`, con el historial extraído, y subirlo a `origin` del mod.
+- [ ] 4. Llevar al `.gitignore` del mod las entradas que hoy tiene el central: `tsconfig.json` y `.claude-plugin/types/`.
+- [ ] 5. En el central: `git rm --cached -r mods/usage-meter` (los archivos quedan en disco) y borrar la rama temporal.
+- [ ] 6. Verificar que `mods/usage-meter` es un repo propio y que `git status` del central ya no lo ve; correr los tests del mod.
 - [ ] 7. Documentar cierre de tarea (solo si el operador lo pide).
 
-Próximo paso concreto: paso 7, documentar el cierre, solo cuando el operador lo pida. La validación (`claude plugin validate .`) pasa con un aviso esperado: el catálogo no tiene plugins hasta la Tarea 12.
+Próximo paso concreto: esperar las decisiones del operador y empezar por el paso 1.
 
-Pendientes ya creados: Tareas 19 (repo hijo `usage-meter`), 20 (prepararlo; bloqueada por la 19) y 12 (publicar; bloqueada por 18, 19 y 20). Backlog libre: 13, 15 y 19; 14, 16, 20 y 12 bloqueadas.
+Tareas siguientes: 20 (preparar el repo de `usage-meter`; bloqueada por la 19) y 12 (publicar; bloqueada por 19 y 20). Backlog libre: 13 y 15; 14, 16, 20 y 12 bloqueadas.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
