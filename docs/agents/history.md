@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-09 — ✅ Tarea 8 — Añadir categorías al contexto
+
+- La fila de Contexto de `usage-meter` muestra debajo una barra segmentada por categoría y una leyenda (nombre, tokens y % de la ventana), para ver qué ocupa el contexto como en `/context`. El desglose sale de `$.session.usage({ breakdown: 'summary' })`, porque `session.measure` no lo trae.
+- Se eligió `summary` (estimación local, sin llamadas de red) en lugar de `full`, que cuenta con la API de conteo de tokens (gratuita, pero una llamada por herramienta y archivo de memoria en cada medición). Tests (34/34) y validación pasan; revisado a mano por el operador. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-09 — ✅ Tarea 6 — Añadir tokens al contexto
 
 - La fila de Contexto de `usage-meter` muestra los tokens usados sobre la ventana (`84k de 200k`), en gris atenuado tras el porcentaje, para ver cuánto contexto queda en términos absolutos. `Usage.context` pasa de un número a `{ percent, tokens, window }`.

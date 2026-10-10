@@ -15,22 +15,9 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 8 — Añadir categorías al contexto
+Sin tarea en curso
 
-Descripción: en la fila de Contexto de `usage-meter`, mostrar el desglose por categorías (prompt del sistema, herramientas, MCP, agentes, memoria, skills, mensajes, libre) como en el `/context` de Claude Code. Sale de la Tarea 6.
-
-### Plan (aprobado; `breakdown: 'summary'`; ejecución seguida)
-
-- [x] 1. Obtener el desglose: `$.session.usage({ breakdown: 'summary' })` al iniciar y en cada `session.measure`; categorías (nombre, tokens, `kind`) en `Usage.context.categories`. Si falla, queda vacío.
-- [x] 2. Dibujarlo: barra segmentada a todo el ancho y leyenda (`slicesOf` en `format.ts`), con paleta propia (la API da el color como clave de tema, no hex), debajo de la fila de Contexto.
-- [x] 3. Tests (34/34, validación OK) y README.
-- [ ] 4. Documentar cierre de tarea.
-
-Próximo paso: el operador revisa en sesión real (`bun run usage-meter`; no verificado a mano) y pide cerrar; entonces, el paso 4. La fila de Contexto queda con su barra de 10 celdas y además la segmentada: redundante, candidato para la Tarea 7 (UX).
-
-Verificado: `session.measure` NO trae el desglose (solo `tokens`, `window`, `percent`). Sí lo trae `$.session.usage({ breakdown })` (`types/claude-code/index.d.ts:2825`), en `context.breakdown.categories` (`ContextCategory`: `name`, `tokens`, `kind` = `used | free | buffer | deferred`, `color` como clave de tema). `'summary'` estima en local y no cuesta; `'full'` usa la API de conteo de tokens. Sin verificar: si llamarlo en cada medición es lo bastante barato.
-
-Última cerrada: Tarea 6 (tokens en el contexto). Backlog: Tarea 7 (mejorar la UX).
+Última cerrada: Tarea 8 (categorías del contexto). Backlog: Tarea 7 (mejorar la UX).
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
