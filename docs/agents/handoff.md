@@ -15,9 +15,23 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 12 — Subir el mod usage-meter al marketplace
 
-Última cerrada: Tarea 21 (LICENSE MIT del repo central). Backlog: Tareas 12, 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
+Publicar `usage-meter` en el catálogo del central (`Gersom/gersom-claude-mods`). Plan aprobado; ejecutado seguido.
+
+### Plan
+
+- [x] 1. Agregar la entrada de `usage-meter` a `.claude-plugin/marketplace.json` del central, con `source: {source: "github", repo: "Gersom/claude-mod-usage-meter"}`.
+- [x] 2. Actualizar la tabla «Mods» del `README.md` del central (nombre, qué hace, repo).
+- [x] 3. Validar el central con `claude plugin validate .`.
+- [x] 4. Commit y `push` del central (el catálogo se lee desde GitHub, así que hay que subirlo para probar).
+- [x] 5. Probar la instalación real desde GitHub en una configuración aislada (`CLAUDE_CONFIG_DIR` temporal), sin tocar la del operador: `marketplace add Gersom/gersom-claude-mods` e `install usage-meter@gersom-claude-mods`, y lo mismo con el repo del mod.
+- [ ] 6. El operador revisa cómo se ve en la app de escritorio (menú de plugins), que no puedo ver desde acá.
+- [ ] 7. Documentar cierre de tarea (solo si el operador lo pide).
+
+Próximo paso concreto: paso 6, el operador revisa la app de escritorio (menú de plugins); luego paso 7, documentar el cierre, solo cuando lo pida. Hecho: entrada de `usage-meter` en el catálogo (commit `feat(T-12)`, con push) y README del central; `validate` pasa. Instalación real probada en una configuración aislada, sin tocar la del operador: el central (`install usage-meter@gersom-claude-mods`) y el repo suelto (`install usage-meter --marketplace Gersom/claude-mod-usage-meter`) instalaron la versión 1.0.0.
+
+Backlog: Tareas 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
