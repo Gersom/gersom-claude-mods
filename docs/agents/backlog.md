@@ -21,14 +21,19 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 9
+**Próximo número de tarea:** 10
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-Ninguna.
+### Tarea 9 — Limpia de código muerto
+
+- **Descripción:** quitar de `usage-meter` lo que el rediseño de la Tarea 7 dejó sin uso al dibujar: `bar()`, `barParts()`, `Row.bar` y `Slice.cells` (con el reparto de celdas de `slicesOf`), más lo que quede huérfano (constantes y parámetros), y sus tests.
+- **Decisiones/temas a definir antes de empezar:** Ninguno.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-09
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
