@@ -21,14 +21,26 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 6
+**Próximo número de tarea:** 8
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-Ninguna.
+### Tarea 6 — Añadir tokens y categorías para el contexto
+
+- **Descripción:** en la fila de contexto de `usage-meter`, mostrar los tokens usados y la ventana (ej. `90k de 1M`) y el desglose por categorías (prompt del sistema, herramientas, MCP, agentes, memoria, skills, mensajes, libre), como en el `/context` de Claude Code.
+- **Decisiones/temas a definir antes de empezar:** de dónde salen las categorías (`$.session.usage()` / `session.measure` solo entregan `window`, `tokens` y `percent`; hay que verificar si la API expone el desglose); cómo se dibuja (barra segmentada y leyenda) y cómo convive con el README, que hoy deja los tokens fuera de alcance. Se hace por partes: primero tokens, después categorías.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-09
+
+### Tarea 7 — Mejorar la UX
+
+- **Descripción:** mejorar la experiencia visual y de uso del panel de `usage-meter`.
+- **Decisiones/temas a definir antes de empezar:** qué se quiere mejorar exactamente (hay que preguntarle al operador). Punto de partida: acercar el diseño a la captura de `/context` que adjuntó (recuadro con `◆` y título en negrita, recuadro de porcentaje con color de umbral, barra a todo el ancho con la parte vacía en gris oscuro).
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-09
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
