@@ -28,13 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 10 — Multi idioma para usage-meter
-
-- **Descripción:** que `usage-meter` muestre sus textos (títulos, `Restablece en`, `Categorías`, `Compactar`, `Una línea`, días y meses, `Libre`, `Búfer`…) en más de un idioma, hoy solo en español.
-- **Decisiones/temas a definir antes de empezar:** qué idiomas (al menos español e inglés); cómo se elige el idioma (el de la sesión o del sistema si la API lo expone, o una opción del mod); dónde viven las traducciones.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-09
-
 ### Tarea 11 — Revisar y optimizar el consumo de tokens de usage-meter
 
 - **Descripción:** revisar cuántos tokens consume `usage-meter` (si algo del mod llega al modelo o al contexto) y optimizarlo solo si hace falta.
