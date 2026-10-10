@@ -43,13 +43,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 13 — el mod de caché aún no existía.
 - **Agregada:** 2026-10-09
 
-### Tarea 22 — Borde gris oscuro en cache-watch y usage-meter
-
-- **Descripción:** agregar un borde gris oscuro (`#4b5563`) a los paneles de `cache-watch` y de `usage-meter`. Hoy el borde redondeado solo se dibuja en la terminal; en la app de escritorio no hay ninguno.
-- **Decisiones/temas a definir antes de empezar:** si el borde debe verse también en la app de escritorio (hoy no hay) o solo unificar el de la terminal; si al apilarse deben compartir un solo borde o llevar uno cada uno.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-10
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 

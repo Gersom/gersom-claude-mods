@@ -15,9 +15,11 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
+Tarea 22 — Borde gris oscuro en cache-watch y usage-meter
 
-Última cerrada: Tarea 13 (mod `cache-watch`). Pendiente de subir (`git push`): los commits de UX de `cache-watch` y el de `usage-meter` (apilado bajo otros hooks). Backlog: Tareas 14, 15 y 22 libres; 16 bloqueada por 15.
+Decisiones del operador: borde para todas las superficies con el mismo código (`#4b5563`, redondeado) y uno independiente en cada panel. Hecho y commiteado en local (sin push) en ambos mods: se quitó la condición `surface === 'terminal'`, `usage-meter` descuenta siempre las columnas/filas del borde y se actualizaron los README; validate y tests pasan (23 y 64). No se probó dibujado en una sesión real (`claude --plugin-dir` de ambos mods).
+
+Próximo paso: visto bueno visual del operador; cerrar la tarea solo cuando lo pida (cierre: history, backlog ya sin la 22, y `git push` de los dos mods).
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
