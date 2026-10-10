@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 20 — Preparar repo usage-meter para el marketplace
+
+- `Gersom/claude-mod-usage-meter` quedó listo para publicarse: `LICENSE` MIT, versión 1.0.0 con `license`, `repository` y `homepage`, un `marketplace.json` de un plugin (nombre `usage-meter`) para instalarlo suelto, y README con la línea de instalación, el requisito de Claude Code 2.1.287+, la licencia y el enlace de donación.
+- El plugin se queda en la raíz del repo (`source: "./"`, que valida) en lugar de moverlo a `src/`: con `src/` el `LICENSE` y el README de la raíz no viajarían con la instalación. `validate`, `--strict` y los 63 tests pasan; no se probó instalar desde GitHub en una sesión real (queda para la Tarea 12).
+
 ## 2026-10-10 — ✅ Tarea 19 — Crear repo hijo usage-meter
 
 - `usage-meter` salió a su propio repo público, `Gersom/claude-mod-usage-meter`, con sus 25 commits de historial (extraídos con `git subtree split`) y el repo vive en `mods/usage-meter/`; el central dejó de versionarlo. El prefijo `claude-mod-` agrupa los repos de la familia y se ve en la lista de GitHub; el nombre del plugin sigue siendo `usage-meter`.

@@ -44,14 +44,11 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Desbloquea:** Tarea 16.
 - **Agregada:** 2026-10-09
 
-<!-- agent-context-kit:section=blocked -->
-## Tareas bloqueadas / pospuestas
-
 ### Tarea 12 — Subir el mod usage-meter al marketplace
 
-- **Descripción:** publicar `usage-meter` en el marketplace propio (repo central `Gersom/gersom-claude-mods`), con su línea de instalación en el README (el validador la pide), versión 1.0.0 y licencia MIT.
-- **Decisiones/temas a definir antes de empezar:** definidas: marketplace propio en el repo central, un repo por mod, MIT, 1.0.0, usuario de GitHub `Gersom`. Por verificar: cómo se ve el marketplace en la app de escritorio; si el validador exige la línea de instalación.
-- **Bloqueos:** [dependencia] Tarea 20 — el repo de `usage-meter` aún no está preparado para publicarse (el central y el repo del mod ya existen: Tareas 18 y 19).
+- **Descripción:** publicar `usage-meter` en el marketplace propio (repo central `Gersom/gersom-claude-mods`): agregarlo al `marketplace.json` del central con fuente `github`, probar la instalación real y actualizar el README del central. La línea de instalación, la versión 1.0.0 y la licencia MIT del mod ya están hechas (Tarea 20).
+- **Decisiones/temas a definir antes de empezar:** definidas: marketplace propio en el repo central, un repo por mod, MIT, 1.0.0, usuario de GitHub `Gersom`. Por verificar: cómo se ve el marketplace en la app de escritorio. Conviene hacer antes la Tarea 21 (LICENSE del central).
+- **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 20 — el repo de `usage-meter` aún no está preparado para publicarse.
 - **Agregada:** 2026-10-09
 
 ### Tarea 21 — Agregar LICENSE MIT al repo central
@@ -60,6 +57,9 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Decisiones/temas a definir antes de empezar:** Ninguno; MIT y repo público ya decididos por el operador.
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-10
+
+<!-- agent-context-kit:section=blocked -->
+## Tareas bloqueadas / pospuestas
 
 ### Tarea 14 — Refinar el mod de caché
 
