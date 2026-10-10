@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-09 — ✅ Tarea 6 — Añadir tokens al contexto
+
+- La fila de Contexto de `usage-meter` muestra los tokens usados sobre la ventana (`84k de 200k`), en gris atenuado tras el porcentaje, para ver cuánto contexto queda en términos absolutos. `Usage.context` pasa de un número a `{ percent, tokens, window }`.
+- El desglose por categorías, que originalmente era parte de esta tarea, pasó a la Tarea 8. Tests (27/27) y validación pasan; no se revisó a mano en sesión. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-08 — ✅ Tarea 5 — Cambiar porcentajes
 
 - Los umbrales de color de `usage-meter` pasan a verde hasta 60 %, amarillo de 61 a 80 % y rojo por encima de 80 %, en lugar de 70 y 90 %. El 80 % exacto quedó en amarillo.
