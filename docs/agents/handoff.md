@@ -17,7 +17,7 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 
 Sin tarea en curso
 
-Última cerrada: Tarea 10 (multi idioma para usage-meter). Backlog: Tareas 11, 12, 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
+Última cerrada: Tarea 11 (consumo de tokens de usage-meter). Backlog: Tareas 12, 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

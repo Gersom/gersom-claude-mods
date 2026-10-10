@@ -28,13 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 11 — Revisar y optimizar el consumo de tokens de usage-meter
-
-- **Descripción:** revisar cuántos tokens consume `usage-meter` (si algo del mod llega al modelo o al contexto) y optimizarlo solo si hace falta.
-- **Decisiones/temas a definir antes de empezar:** Ninguno; el mod no registra herramientas ni inyecta instrucciones, pero hay que medirlo en vez de suponerlo. Ojo: `$.session.usage({ breakdown: 'summary' })` se llama en cada medición.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-09
-
 ### Tarea 12 — Subir el mod usage-meter al marketplace
 
 - **Descripción:** publicar `usage-meter` en un marketplace de plugins de Claude Code, con su línea de instalación en el README (el validador la pide).

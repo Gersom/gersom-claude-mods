@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 11 — Revisar y optimizar el consumo de tokens de usage-meter
+
+- Se revisó el mod y no consume tokens del modelo: el manifiesto no declara skills, agentes, comandos ni MCP, los hooks solo observan (`next(e)` sin modificar) y `breakdown: 'summary'` estima en local, sin llamadas de red. No hizo falta optimizar nada.
+- La conclusión sale del código y de los tipos del motor; no se midió en una sesión real. Quedó en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md), sección «Consumo de tokens».
+
 ## 2026-10-09 — ✅ Tarea 10 — Multi idioma para usage-meter
 
 - `usage-meter` habla español o inglés según `settings.language`, con diccionarios fijos en el propio mod: ningún agente ni subagente traduce, no hay llamadas a modelos ni consumo de tokens. Si no se detecta el idioma, el panel va en inglés; un botón `[ES]`/`[EN]` lo cambia a mano.
