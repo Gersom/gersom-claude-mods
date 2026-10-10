@@ -44,14 +44,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Desbloquea:** Tarea 16.
 - **Agregada:** 2026-10-09
 
-### Tarea 20 — Preparar repo usage-meter para el marketplace
-
-- **Descripción:** dejar el repo de `usage-meter` listo para publicarse: `LICENSE` MIT, `license`, `repository`, `homepage` y `version: "1.0.0"` en `plugin.json`, su propio `marketplace.json` de una entrada (instalación suelta), README con la línea de instalación (`/plugin install usage-meter --marketplace <owner>/<repo>`, que el validador pide) y el requisito de Claude Code 2.1.287+, y enlace de donación si el operador lo quiere.
-- **Decisiones/temas a definir antes de empezar:** enlace de PayPal para donaciones (si va); nombre del marketplace individual. Repo del mod: `Gersom/claude-mod-usage-meter` (público).
-- **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 19 — el repo de `usage-meter` aún no existe.
-- **Desbloquea:** Tarea 12.
-- **Agregada:** 2026-10-10
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
