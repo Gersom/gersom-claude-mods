@@ -15,25 +15,9 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 10 — Multi idioma para usage-meter
+Sin tarea en curso
 
-Descripción: que `usage-meter` muestre sus textos en español e inglés según `settings.language`, sin que ningún agente ni subagente traduzca nada (diccionarios fijos en el mod, sin llamadas a modelos ni tokens).
-
-Decisiones del operador: idiomas español e inglés; **por defecto, inglés** si no se detecta; automático por `settings.language` y además un botón `[ES]`/`[EN]` para cambiarlo a mano (no persiste: al reiniciar vuelve al automático; la persistencia con `$.store` no se pidió y no se hizo).
-
-### Plan (aprobado; ejecución seguida)
-
-- [x] 1. `hooks/i18n.ts` (diccionarios `es`/`en`, `detectLang`, `otherLang`, `DEFAULT_LANG = 'en'`) y tipos `Lang` y `lang` en `types/index.d.ts`.
-- [x] 2. `format.ts`: las funciones que escriben texto reciben `Texts` por parámetro (`rowsOf`, `rowOf`, `contextRow`, `resetText`, `relative`, `shortDate`, `longDate`, `tokensText`, `slicesOf`).
-- [x] 3. `register.tsx`: `atom` `lang` (`null` hasta leerlo); `ensureLang` lee `$.settings.read()` en `session.start` y `session.measure`; botón `[ES]`/`[EN]` al pie; botones y `Categorías` salen del diccionario.
-- [x] 4. Tests (63/63, validación OK, sin verificar a mano en la app) y README (sección «Idioma»).
-- [ ] 5. Documentar cierre de tarea (solo cuando el operador lo pida).
-
-Verificado: `settings.language` es texto libre (el esquema oficial de `settings.json` lo describe con ejemplos en inglés: `japanese`, `spanish`, `french`) y el del operador es `"Español"` (`~/.claude/settings.json`, línea 21), por eso `detectLang` ignora mayúsculas y tildes y reconoce `es`, `es-MX`, `spanish`, `castellano`; un idioma como `Estonian` no se confunde con español (se compara la primera palabra entera). `claude plugin validate` lista las llamadas del mod: reloj, `session.usage`, `settings.read`, estado y UI; ninguna a modelos. Sin verificar: que `$.settings.read()` en una sesión real devuelva `language` fusionado (solo probado con el mock de los tests).
-
-Próximo paso: el operador lo prueba en sesión real (`bun run usage-meter`; con su configuración debería salir en español) y pide cerrar la tarea.
-
-Última cerrada: Tarea 9 (limpia de código muerto). Backlog: Tareas 11 a 16 (14 y 16 bloqueadas).
+Última cerrada: Tarea 10 (multi idioma para usage-meter). Backlog: Tareas 11, 12, 13 y 15 libres; 14 y 16 bloqueadas por 13 y 15.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas

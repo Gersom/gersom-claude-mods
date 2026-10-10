@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-09 — ✅ Tarea 10 — Multi idioma para usage-meter
+
+- `usage-meter` habla español o inglés según `settings.language`, con diccionarios fijos en el propio mod: ningún agente ni subagente traduce, no hay llamadas a modelos ni consumo de tokens. Si no se detecta el idioma, el panel va en inglés; un botón `[ES]`/`[EN]` lo cambia a mano.
+- `settings.language` es texto libre (el del operador es `"Español"`), así que la detección ignora mayúsculas y tildes. El cambio a mano no persiste entre sesiones; no se pidió. Tests (63/63) y validación pasan; revisado a mano por el operador. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-09 — ✅ Tarea 9 — Limpia de código muerto
 
 - Se quitó de `usage-meter` lo que el rediseño de la Tarea 7 dejó sin uso: las barras hechas con texto (`bar()`, `barParts()`, `Row.bar`) y el reparto de celdas de `slicesOf` (`Slice.cells`), que ya no recibe el ancho. Así el código no sugiere un camino de dibujo que ya no existe.
