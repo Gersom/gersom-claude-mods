@@ -28,7 +28,8 @@ Alcance elegido por el operador: cabecera estilo captura, una sola barra por med
 - [x] 3. `register.tsx`: una sola barra a todo el ancho por medida (vacío en gris oscuro); en Contexto, la segmentada reemplaza a la de 10 celdas, y la leyenda va en columnas.
 - [x] 4. Tests (39/39, validación OK) y README (diseño y ejemplo).
 - [x] 5. Refinamiento de UX (tests 44/44, validación OK, sin verificar a mano): (a) colores por nombre, `MCP server instructions` naranja y `Messages` violeta; (b) leyenda en el orden `■ nombre % tokens`; (c) texto de las categorías en gris `#9ca3af`; (d) las líneas en blanco entre medidas pasan a tener prioridad sobre la leyenda (antes se quitaban primero, por eso no se veían).
-- [ ] 6. Documentar cierre de tarea.
+- [x] 6. Ajustes de UX (2), pedidos tras ver el paso 5 (tests 44/44, validación OK, sin verificar a mano): (a) el porcentaje de la leyenda del mismo color que el resto del texto; (b) formato `■ nombre (% ≈ tokens)`; (c) `Button` plain `▸ Categorías` / `▾ Categorías` bajo la barra de Contexto que abre o cierra la leyenda, cerrada por defecto (`atom` `expanded`; el test lo pulsa con `ui.press`); (d) quitado el borde general (el ancho útil pasa a `bodyColumns - 2` y la franja gana 2 filas).
+- [ ] 7. Documentar cierre de tarea. **El operador pidió no cerrar la tarea hasta que lo diga**; pueden venir más ajustes (se agregan como pasos nuevos antes de este).
 
 Primera revisión del operador (captura en la app de escritorio) y correcciones aplicadas:
 - Faltaban los límites de 5 horas y semanal: causa probable (inferida, no verificada en la app), la franja admite `maxRows` filas y las últimas se desplazan fuera de vista; ahora el reparto prioriza cabeceras y barras, luego la leyenda y al final las líneas en blanco.
