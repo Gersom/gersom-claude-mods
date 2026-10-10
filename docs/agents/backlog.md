@@ -28,13 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 8 — Añadir categorías al contexto
-
-- **Descripción:** en la fila de contexto de `usage-meter`, mostrar el desglose por categorías (prompt del sistema, herramientas, MCP, agentes, memoria, skills, mensajes, libre) como en el `/context` de Claude Code. Sale de la Tarea 6, que añade solo los tokens.
-- **Decisiones/temas a definir antes de empezar:** de dónde salen las categorías (`ContextCategory` en `types/claude-code/index.d.ts`; `session.measure` solo entrega `window`, `tokens` y `percent`, hay que verificar si la API del hook las expone); cómo se dibuja (barra segmentada y leyenda).
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-09
-
 ### Tarea 7 — Mejorar la UX
 
 - **Descripción:** mejorar la experiencia visual y de uso del panel de `usage-meter`.
