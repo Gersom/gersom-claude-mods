@@ -29,9 +29,14 @@ Alcance elegido por el operador: cabecera estilo captura, una sola barra por med
 - [x] 4. Tests (39/39, validación OK) y README (diseño y ejemplo).
 - [ ] 5. Documentar cierre de tarea.
 
-Próximo paso: el operador lo ve aplicado en sesión real (`bun run usage-meter`; no verificado a mano), dice si hay que cambiar algo más y pide cerrar; entonces, el paso 5.
+Primera revisión del operador (captura en la app de escritorio) y correcciones aplicadas:
+- Faltaban los límites de 5 horas y semanal: causa probable (inferida, no verificada en la app), la franja admite `maxRows` filas y las últimas se desplazan fuera de vista; ahora el reparto prioriza cabeceras y barras, luego la leyenda y al final las líneas en blanco.
+- La barra del contexto se partía en dos líneas: eran `Text` con `█` repetido, más anchos que el contenedor real; ahora son `Box` con `flexGrow` proporcional (el motor limita `flexGrow` a 10000).
+- La leyenda vuelve a ir seguida, no en columnas.
 
-Contexto: `Row.bar` y `bar()` ya no se usan al dibujar (solo los tests); se pueden limpiar si el operador lo pide.
+Próximo paso: el operador vuelve a verlo en sesión real (`bun run usage-meter`; tests 42/42 y validación OK, no verificado a mano), dice si hay que cambiar algo más y pide cerrar; entonces, el paso 5.
+
+Contexto: `Row.bar`, `bar()`, `barParts` y `Slice.cells` ya no se usan al dibujar (solo los tests); se pueden limpiar si el operador lo pide.
 
 Última cerrada: Tarea 8 (categorías del contexto). Backlog sin tareas libres.
 
