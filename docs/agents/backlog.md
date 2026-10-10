@@ -21,19 +21,66 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 10
+**Próximo número de tarea:** 17
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-Ninguna.
+### Tarea 10 — Multi idioma para usage-meter
+
+- **Descripción:** que `usage-meter` muestre sus textos (títulos, `Restablece en`, `Categorías`, `Compactar`, `Una línea`, días y meses, `Libre`, `Búfer`…) en más de un idioma, hoy solo en español.
+- **Decisiones/temas a definir antes de empezar:** qué idiomas (al menos español e inglés); cómo se elige el idioma (el de la sesión o del sistema si la API lo expone, o una opción del mod); dónde viven las traducciones.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-09
+
+### Tarea 11 — Revisar y optimizar el consumo de tokens de usage-meter
+
+- **Descripción:** revisar cuántos tokens consume `usage-meter` (si algo del mod llega al modelo o al contexto) y optimizarlo solo si hace falta.
+- **Decisiones/temas a definir antes de empezar:** Ninguno; el mod no registra herramientas ni inyecta instrucciones, pero hay que medirlo en vez de suponerlo. Ojo: `$.session.usage({ breakdown: 'summary' })` se llama en cada medición.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-09
+
+### Tarea 12 — Subir el mod usage-meter al marketplace
+
+- **Descripción:** publicar `usage-meter` en un marketplace de plugins de Claude Code, con su línea de instalación en el README (el validador la pide).
+- **Decisiones/temas a definir antes de empezar:** en qué marketplace (uno propio en el repo o uno existente); nombre y `<owner>/<repo>`; licencia y versión; si se publica antes o después de las Tareas 10 y 11.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-09
+
+### Tarea 13 — Iniciar nuevo mod para mostrar el caché
+
+- **Descripción:** crear un mod nuevo, junto a `usage-meter`, que muestre el estado del caché de prompts de la sesión.
+- **Decisiones/temas a definir antes de empezar:** qué es exactamente "el caché" y qué datos entrega la API (p. ej. `cache_read_input_tokens` y `cache_creation_input_tokens` en el uso de cada respuesta); nombre del mod; si va en su propio panel o dentro de `usage-meter`.
+- **Bloqueos:** Ninguno.
+- **Desbloquea:** Tarea 14.
+- **Agregada:** 2026-10-09
+
+### Tarea 15 — Iniciar nuevo mod claude-radar
+
+- **Descripción:** construir el plugin `claude-radar`, un monitor visual pasivo del agente principal y sus subagentes, según el documento [`docs/claude-radar.md`](../claude-radar.md).
+- **Decisiones/temas a definir antes de empezar:** el documento pide, antes de implementar, explicar el plan y esperar autorización (mediana a grande: plan primero, Regla 2); verificar las APIs reales de la versión instalada (eventos de subagentes, tareas) y cargar la skill `plugin-authoring`.
+- **Bloqueos:** Ninguno.
+- **Desbloquea:** Tarea 16.
+- **Agregada:** 2026-10-09
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
-Ninguna.
+### Tarea 14 — Refinar el mod de caché
+
+- **Descripción:** ajustar el mod de caché de la Tarea 13 tras verlo en uso (diseño, datos, rendimiento).
+- **Decisiones/temas a definir antes de empezar:** qué refinar; lo define el operador al ver el mod.
+- **Bloqueos:** [dependencia] Tarea 13 — el mod de caché aún no existe.
+- **Agregada:** 2026-10-09
+
+### Tarea 16 — Refinar el mod claude-radar
+
+- **Descripción:** ajustar `claude-radar` (Tarea 15) tras verlo en uso.
+- **Decisiones/temas a definir antes de empezar:** qué refinar; lo define el operador al ver el mod.
+- **Bloqueos:** [dependencia] Tarea 15 — `claude-radar` aún no existe.
+- **Agregada:** 2026-10-09
 
 <!-- agent-context-kit:section=grouped -->
 ## Tareas agrupadas
