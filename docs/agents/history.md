@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 23 — Cambiar cache-watch a la barra de estado
+
+- `cache-watch` ahora tiene dos vistas, el panel sobre el prompt y la línea de estado del mod (`$.ui.status`), y el comando `/cache-watch` alterna entre ellas en vivo; la última elegida se recuerda entre sesiones (`$.store`) y manda sobre la opción `display`. Se quedó con las dos porque el operador quería poder elegir según el momento, no reemplazar el panel.
+- Se probó un modo con colores ANSI en la línea de estado y se descartó: la línea de los mods es texto plano y los códigos salían rotos. Por eso la vista de barra no lleva colores y el panel conserva los suyos. Probado a mano por el operador (panel y barra, comando); 52 tests.
+
 ## 2026-10-10 — ✅ Tarea 22 — Borde gris oscuro en cache-watch y usage-meter
 
 - Los paneles de `cache-watch` y `usage-meter` llevan el mismo borde redondeado gris oscuro (`#4b5563`) en todas las superficies, uno independiente por panel; antes solo la terminal lo tenía y el escritorio no. Se quitó la condición por superficie para que sea un solo comportamiento, y `usage-meter` ahora descuenta siempre lo que el borde ocupa.
