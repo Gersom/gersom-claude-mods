@@ -1,3 +1,2 @@
-# Generados por Claude Code al cargar un mod
-mods/*/tsconfig.json
-mods/*/.claude-plugin/types/
+# Cada mod vive en su propio repo dentro de mods/ (su .git propio); este repo no los versiona
+mods/
