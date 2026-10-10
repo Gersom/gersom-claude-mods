@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-09 — ✅ Tarea 7 — Mejorar la UX
+
+- El panel de `usage-meter` se rediseñó a partir de la captura de `/context` y de revisiones del operador en la terminal y la app de escritorio: cabecera con `◆` y porcentaje en recuadro de color, barras a todo el ancho, leyenda de categorías desplegable (`▸ Categorías`), títulos nuevos, botones `Compactar` y `Una línea` al pie y borde gris oscuro solo en la terminal.
+- Dos causas de fallos reales en la app: la franja admite `maxRows` y desplaza fuera de vista lo que sobra (los límites desaparecían), y las barras hechas con `█` repetidos se partían; ahora son `Box` con `flexGrow`. Tests (55/55) y validación pasan; revisado a mano por el operador. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-09 — ✅ Tarea 8 — Añadir categorías al contexto
 
 - La fila de Contexto de `usage-meter` muestra debajo una barra segmentada por categoría y una leyenda (nombre, tokens y % de la ventana), para ver qué ocupa el contexto como en `/context`. El desglose sale de `$.session.usage({ breakdown: 'summary' })`, porque `session.measure` no lo trae.
