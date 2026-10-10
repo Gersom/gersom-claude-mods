@@ -9,6 +9,10 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 17 — Título corto «Límite 5h» en la vista de una línea
+
+- En la vista `[=] Una línea` de `usage-meter`, el título en español pasa de `Límite 5 horas` a `Límite 5h`, para ahorrar ancho en una línea que se corta si no cabe. El título completo (`Límite de 5 horas`) y el texto en inglés no cambian. Tests (63/63) pasan.
+
 ## 2026-10-10 — ✅ Tarea 11 — Revisar y optimizar el consumo de tokens de usage-meter
 
 - Se revisó el mod y no consume tokens del modelo: el manifiesto no declara skills, agentes, comandos ni MCP, los hooks solo observan (`next(e)` sin modificar) y `breakdown: 'summary'` estima en local, sin llamadas de red. No hizo falta optimizar nada.

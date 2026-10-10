@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 17
+**Próximo número de tarea:** 18
 
 ---
 
