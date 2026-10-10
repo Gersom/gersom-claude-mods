@@ -27,14 +27,15 @@ Alcance elegido por el operador: cabecera estilo captura, una sola barra por med
 - [x] 2. `register.tsx`: cabecera con `◆` en el color de la medida, etiqueta en negrita y a la derecha el texto de restablecimiento / tokens y el % como recuadro con fondo del color de umbral; sin título «Uso»; línea en blanco entre medidas.
 - [x] 3. `register.tsx`: una sola barra a todo el ancho por medida (vacío en gris oscuro); en Contexto, la segmentada reemplaza a la de 10 celdas, y la leyenda va en columnas.
 - [x] 4. Tests (39/39, validación OK) y README (diseño y ejemplo).
-- [ ] 5. Documentar cierre de tarea.
+- [x] 5. Refinamiento de UX (tests 44/44, validación OK, sin verificar a mano): (a) colores por nombre, `MCP server instructions` naranja y `Messages` violeta; (b) leyenda en el orden `■ nombre % tokens`; (c) texto de las categorías en gris `#9ca3af`; (d) las líneas en blanco entre medidas pasan a tener prioridad sobre la leyenda (antes se quitaban primero, por eso no se veían).
+- [ ] 6. Documentar cierre de tarea.
 
 Primera revisión del operador (captura en la app de escritorio) y correcciones aplicadas:
 - Faltaban los límites de 5 horas y semanal: causa probable (inferida, no verificada en la app), la franja admite `maxRows` filas y las últimas se desplazan fuera de vista; ahora el reparto prioriza cabeceras y barras, luego la leyenda y al final las líneas en blanco.
 - La barra del contexto se partía en dos líneas: eran `Text` con `█` repetido, más anchos que el contenedor real; ahora son `Box` con `flexGrow` proporcional (el motor limita `flexGrow` a 10000).
 - La leyenda vuelve a ir seguida, no en columnas.
 
-Próximo paso: el operador vuelve a verlo en sesión real (`bun run usage-meter`; tests 42/42 y validación OK, no verificado a mano), dice si hay que cambiar algo más y pide cerrar; entonces, el paso 5.
+Próximo paso: el operador vuelve a verlo en sesión real (`bun run usage-meter`), dice si hay que cambiar algo más y pide cerrar; entonces, el paso 6.
 
 Contexto: `Row.bar`, `bar()`, `barParts` y `Slice.cells` ya no se usan al dibujar (solo los tests); se pueden limpiar si el operador lo pide.
 
