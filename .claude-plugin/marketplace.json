@@ -7,6 +7,11 @@
       "name": "usage-meter",
       "source": { "source": "github", "repo": "Gersom/claude-mod-usage-meter" },
       "description": "Recuadro sobre el prompt con el porcentaje de contexto y de los límites de 5 horas y semanal."
+    },
+    {
+      "name": "cache-watch",
+      "source": { "source": "github", "repo": "Gersom/claude-mod-cache-watch" },
+      "description": "Panel sobre el prompt que muestra si el caché de prompts está caliente o frío, con cuenta regresiva."
     }
   ]
 }

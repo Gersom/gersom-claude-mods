@@ -28,6 +28,7 @@ Cada mod se instala por separado y se actualiza desde su propio repo.
 | Mod | Qué hace | Repo |
 |---|---|---|
 | `usage-meter` | Recuadro sobre el prompt con el % de contexto y de los límites de 5 horas y semanal. | [claude-mod-usage-meter](https://github.com/Gersom/claude-mod-usage-meter) |
+| `cache-watch` | Panel sobre el prompt que muestra si el caché de prompts está caliente o frío, con cuenta regresiva. | [claude-mod-cache-watch](https://github.com/Gersom/claude-mod-cache-watch) |
 
 ## Para quien desarrolla
 
