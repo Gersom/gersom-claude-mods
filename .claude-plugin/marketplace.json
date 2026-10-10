@@ -2,5 +2,11 @@
   "name": "gersom-claude-mods",
   "owner": { "name": "Gersom" },
   "metadata": { "description": "Colección de mods de Gersom para Claude Code." },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "usage-meter",
+      "source": { "source": "github", "repo": "Gersom/claude-mod-usage-meter" },
+      "description": "Recuadro sobre el prompt con el porcentaje de contexto y de los límites de 5 horas y semanal."
+    }
+  ]
 }

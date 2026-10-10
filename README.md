@@ -22,7 +22,7 @@ Cada mod se instala por separado y se actualiza desde su propio repo.
 
 | Mod | Qué hace | Repo |
 |---|---|---|
-| — | Todavía no hay mods publicados. | — |
+| `usage-meter` | Recuadro sobre el prompt con el % de contexto y de los límites de 5 horas y semanal. | [claude-mod-usage-meter](https://github.com/Gersom/claude-mod-usage-meter) |
 
 ## Para quien desarrolla
 
