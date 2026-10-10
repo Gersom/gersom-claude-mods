@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-09 — ✅ Tarea 9 — Limpia de código muerto
+
+- Se quitó de `usage-meter` lo que el rediseño de la Tarea 7 dejó sin uso: las barras hechas con texto (`bar()`, `barParts()`, `Row.bar`) y el reparto de celdas de `slicesOf` (`Slice.cells`), que ya no recibe el ancho. Así el código no sugiere un camino de dibujo que ya no existe.
+- El panel no cambia. Tests (50/50) y validación pasan. Detalle en [`mods/usage-meter/README.md`](../../mods/usage-meter/README.md).
+
 ## 2026-10-09 — ✅ Tarea 7 — Mejorar la UX
 
 - El panel de `usage-meter` se rediseñó a partir de la captura de `/context` y de revisiones del operador en la terminal y la app de escritorio: cabecera con `◆` y porcentaje en recuadro de color, barras a todo el ancho, leyenda de categorías desplegable (`▸ Categorías`), títulos nuevos, botones `Compactar` y `Una línea` al pie y borde gris oscuro solo en la terminal.
