@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 28 — Implementar pane para agent-radar
+
+- `agent-radar` ganó un `Pane` de detalle que se abre y cierra solo con el botón `[ ◧ Detail ]` de la banda: checklist completo, subagentes vivos con su tarea completa y un historial (hasta 50) de los terminados, que la banda sigue retirando a los 5 s. Solo se abre por una pulsación porque un pane abierto por el mod bajo 144 columnas no se coloca; el contenido (detalle vivo más historial) lo eligió el operador.
+- `session.end` ahora reinicia todo el estado del mod salvo ON/OFF. Probado a mano por el operador; 91 tests. Sin verificar con el motor real: el cierre por el usuario (hook `ui.close`, origen `person`) y cómo se acopla según la superficie.
+
 ## 2026-10-11 — ✅ Tarea 27 — Fusionar botones en usage-meter
 
 - Los dos botones de vista de `usage-meter` (`[-] Compactar` y `[=] Una línea`) pasaron a uno solo que rota completa → compacta → una línea → completa y muestra la vista a la que pasará; el botón de idioma quedó aparte. Menos controles al pie y un orden predecible, a cambio de que volver a una vista concreta puede pasar por la intermedia.
