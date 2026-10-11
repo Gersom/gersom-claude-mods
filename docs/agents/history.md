@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 27 — Fusionar botones en usage-meter
+
+- Los dos botones de vista de `usage-meter` (`[-] Compactar` y `[=] Una línea`) pasaron a uno solo que rota completa → compacta → una línea → completa y muestra la vista a la que pasará; el botón de idioma quedó aparte. Menos controles al pie y un orden predecible, a cambio de que volver a una vista concreta puede pasar por la intermedia.
+- Fusionar también el idioma en ese botón se descartó por ser menos claro. Probado a mano por el operador; 65 tests.
+
 ## 2026-10-11 — ✅ Tarea 15 — Iniciar nuevo mod claude-radar
 
 - Nació `agent-radar` (`mods/agent-radar/`, repo propio, aún sin remoto ni catálogo): un monitor pasivo sobre el prompt con el título del turno, su tiempo, el checklist de las tareas reales, la sección de subagentes con su nombre real y estado por `agentId`, y el botón `Claude Radar: ON/OFF` persistido en `$.store`. Oculta solo de forma visual las filas técnicas mientras trabaja y nunca toca la respuesta final; no hace llamadas a modelos ni registra comandos ni herramientas.

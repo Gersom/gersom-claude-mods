@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 27
+**Próximo número de tarea:** 29
 
 ---
 
@@ -41,6 +41,13 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Decisiones/temas a definir antes de empezar:** confirmar que el mod destinatario es `agent-radar` (supuesto del agente: `cache-watch` ya detecta el idioma y `usage-meter` también).
 - **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 15 — `claude-radar` aún no existía.
 - **Agregada:** 2026-10-10
+
+### Tarea 28 — Implementar pane para agent-radar
+
+- **Descripción:** abrir un `Pane` (`$.ui.open`, dibujado con `ui.render` sobre `{ component: 'Pane' }`) para `agent-radar` como vista de detalle (p. ej. la lista completa de subagentes y su actividad), dejando la banda como resumen.
+- **Decisiones/temas a definir antes de empezar:** qué muestra el pane y cómo se abre y cierra (el botón de la banda, otro control); qué hacer cuando ninguna superficie lo coloca (`isPlaced` falso); cómo convive con ocultar las filas técnicas. Verificar en los tipos y en `reference.md` de `plugin-authoring` antes de diseñar.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-11
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
