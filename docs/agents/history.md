@@ -9,6 +9,16 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 26 — Botón para cambiar a modo status en cache-watch
+
+- El panel de `cache-watch` lleva un botón `[=] Barra de estado` alineado a la derecha, dentro del borde, que pasa a la vista `status`; en esa vista no hay botón porque la línea de estado es texto plano, y de vuelta a `panel` se va solo con `/cache-watch`. Evita tener que escribir el comando para el cambio más habitual.
+- La alineación a la derecha necesitó que la caja interior ocupara todo el ancho (`flexGrow`); sin eso el botón quedaba pegado al texto. Probado a mano por el operador; 58 tests.
+
+## 2026-10-10 — ✅ Tarea 24 — Refinamiento de UX
+
+- `cache-watch` ganó una fila en blanco que lo separa del panel de `usage-meter` en la app de escritorio; en la terminal quedan pegados porque la banda ya va corta de filas. Un margen y una condición por `maxRows` no se veían en el escritorio, así que se usa una fila vacía según `e.surface`.
+- El texto pasó a «Caché caliente» / «Caché fría» entera y coloreada, sin el `◆`; el contador es `59m 03s` (`1h 00m 00s` desde una hora) y la barra de estado omite el «se enfría en». Probado a mano por el operador en terminal y escritorio; 54 tests. Quedó aparte la Tarea 14 (información extra).
+
 ## 2026-10-10 — ✅ Tarea 23 — Cambiar cache-watch a la barra de estado
 
 - `cache-watch` ahora tiene dos vistas, el panel sobre el prompt y la línea de estado del mod (`$.ui.status`), y el comando `/cache-watch` alterna entre ellas en vivo; la última elegida se recuerda entre sesiones (`$.store`) y manda sobre la opción `display`. Se quedó con las dos porque el operador quería poder elegir según el momento, no reemplazar el panel.
