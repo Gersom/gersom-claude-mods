@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 33
+**Próximo número de tarea:** 34
 
 ---
 
@@ -46,6 +46,13 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 - **Descripción:** ponerle borde y espacio a la banda de `agent-radar` como en `cache-watch` (borde redondo gris `#4b5563`, fila en blanco entre paneles en el escritorio) y cambiar el botón `[ ● Claude Radar: ON ]` a solo `ON`/`OFF`.
 - **Decisiones/temas a definir antes de empezar:** ninguno; el nombre «Claude Radar» ya está a la izquierda de la banda. Conviene hacerla junto con las Tareas 30 o 31 si tocan la misma banda.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-11
+
+### Tarea 33 — Crear el repo remoto de agent-radar
+
+- **Descripción:** crear el repo remoto `Gersom/claude-mod-agent-radar` en GitHub, subir `mods/agent-radar` (hoy solo local, sin remoto) y añadirlo al catálogo del central (`.claude-plugin/marketplace.json` y la tabla de mods del README).
+- **Decisiones/temas a definir antes de empezar:** visibilidad del repo (los otros mods son públicos); confirmar el nombre; antes de publicar, revisar el README y los manifiestos (`repository` y `homepage` ya apuntan a `Gersom/claude-mod-agent-radar`). Es una acción externa: se pide autorización explícita en el momento.
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-11
 
