@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 15 — Iniciar nuevo mod claude-radar
+
+- Nació `agent-radar` (`mods/agent-radar/`, repo propio, aún sin remoto ni catálogo): un monitor pasivo sobre el prompt con el título del turno, su tiempo, el checklist de las tareas reales, la sección de subagentes con su nombre real y estado por `agentId`, y el botón `Claude Radar: ON/OFF` persistido en `$.store`. Oculta solo de forma visual las filas técnicas mientras trabaja y nunca toca la respuesta final; no hace llamadas a modelos ni registra comandos ni herramientas.
+- El nombre pedido, `claude-radar`, está reservado por la validación (los plugins de terceros no pueden empezar con «claude-»), así que el id es `agent-radar` y el título visible sigue siendo «Claude Radar». El motor impone que `$` no cruce imports y que los `atom` vivan junto a su uso, por eso la lógica con `$` está en `register.tsx` y `claude-radar.tsx` queda puro. Probado a mano por el operador; 77 tests. Lo no verificable con el kit (p. ej. «Needs you» real) está en el README del mod.
+
 ## 2026-10-10 — ✅ Tarea 14 — Refinar el mod de caché
 
 - En terminal con poco ancho el panel de `cache-watch` omite «se enfría en», y mientras el caché está caliente muestra cuántos tokens se reescribirían si se enfría (`en frío reescribe ~84k` en el panel, `~84k en juego` en la barra de estado). Importa porque lo que el operador quería saber era qué pierde si deja enfriar el caché; el recorte con poco ancho quita primero ese dato, luego «se enfría en».

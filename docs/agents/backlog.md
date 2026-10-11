@@ -28,30 +28,24 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 15 — Iniciar nuevo mod claude-radar
+### Tarea 16 — Refinar el mod agent-radar
 
-- **Descripción:** construir el plugin `claude-radar`, un monitor visual pasivo del agente principal y sus subagentes, según el documento [`docs/claude-radar.md`](../claude-radar.md).
-- **Decisiones/temas a definir antes de empezar:** el documento pide, antes de implementar, explicar el plan y esperar autorización (mediana a grande: plan primero, Regla 2); verificar las APIs reales de la versión instalada (eventos de subagentes, tareas) y cargar la skill `plugin-authoring`.
-- **Bloqueos:** Ninguno.
-- **Desbloquea:** Tarea 16.
+- **Descripción:** ajustar `agent-radar` (Tarea 15; antes llamado `claude-radar`, nombre reservado) tras verlo en uso.
+- **Decisiones/temas a definir antes de empezar:** qué refinar; lo define el operador al ver el mod. Pendiente de verificar en uso real lo que el README del mod lista en «Limitaciones reales de las APIs».
+- **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 15 — `claude-radar` aún no existía.
 - **Agregada:** 2026-10-09
+
+### Tarea 25 — Soporte multi-idioma en agent-radar
+
+- **Descripción:** agregar soporte multi-idioma a `agent-radar` (español/inglés) igual que `usage-meter` y `cache-watch`, pero sin botón: el idioma se detecta solo desde `settings.language` y, si no se puede, va en inglés por defecto (hoy toda su interfaz está en inglés).
+- **Decisiones/temas a definir antes de empezar:** confirmar que el mod destinatario es `agent-radar` (supuesto del agente: `cache-watch` ya detecta el idioma y `usage-meter` también).
+- **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 15 — `claude-radar` aún no existía.
+- **Agregada:** 2026-10-10
 
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
-### Tarea 16 — Refinar el mod claude-radar
-
-- **Descripción:** ajustar `claude-radar` (Tarea 15) tras verlo en uso.
-- **Decisiones/temas a definir antes de empezar:** qué refinar; lo define el operador al ver el mod.
-- **Bloqueos:** [dependencia] Tarea 15 — `claude-radar` aún no existe.
-- **Agregada:** 2026-10-09
-
-### Tarea 25 — Soporte multi-idioma en claude-radar
-
-- **Descripción:** agregar soporte multi-idioma a `claude-radar` (español/inglés) igual que `usage-meter` y `cache-watch`, pero sin botón: el idioma se detecta solo desde `settings.language` y, si no se puede, va en inglés por defecto.
-- **Decisiones/temas a definir antes de empezar:** confirmar que el mod destinatario es `claude-radar` (supuesto del agente: `cache-watch` ya detecta el idioma y `usage-meter` también).
-- **Bloqueos:** [dependencia] Tarea 15 — `claude-radar` aún no existe.
-- **Agregada:** 2026-10-10
+Ninguna
 
 <!-- agent-context-kit:section=grouped -->
 ## Tareas agrupadas
