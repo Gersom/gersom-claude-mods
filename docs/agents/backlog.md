@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 25
+**Próximo número de tarea:** 26
 
 ---
 
@@ -43,13 +43,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 13 — el mod de caché aún no existía.
 - **Agregada:** 2026-10-09
 
-### Tarea 24 — Refinamiento de UX
-
-- **Descripción:** refinar la UX de los mods (por ahora `cache-watch`; ver si incluye `usage-meter`) tras el uso real.
-- **Decisiones/temas a definir antes de empezar:** qué cambios de UX concretos y de qué mod; si se fusiona con la Tarea 14 (refinar `cache-watch`: UX e información extra), que ya cubre parte de esto.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-10
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
@@ -64,3 +57,10 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 ## Tareas agrupadas
 
 No aplica todavía — ningún grupo formado.
+
+### Tarea 25 — Soporte multi-idioma en claude-radar
+
+- **Descripción:** agregar soporte multi-idioma a `claude-radar` (español/inglés) igual que `usage-meter` y `cache-watch`, pero sin botón: el idioma se detecta solo desde `settings.language` y, si no se puede, va en inglés por defecto.
+- **Decisiones/temas a definir antes de empezar:** confirmar que el mod destinatario es `claude-radar` (supuesto del agente: `cache-watch` ya detecta el idioma y `usage-meter` también).
+- **Bloqueos:** [dependencia] Tarea 15 — `claude-radar` aún no existe.
+- **Agregada:** 2026-10-10

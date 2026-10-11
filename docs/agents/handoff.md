@@ -17,7 +17,7 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 
 Sin tarea en curso
 
-Última cerrada: Tarea 23 (vistas panel/barra de `cache-watch` y comando `/cache-watch`). Backlog: Tareas 14, 15 y 24 libres; 16 bloqueada por 15.
+Última cerrada: Tarea 24 (refinamiento de UX de `cache-watch`). Backlog: Tareas 14 y 15 libres; 16 y 25 bloqueadas por 15.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
