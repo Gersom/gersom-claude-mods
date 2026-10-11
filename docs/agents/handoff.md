@@ -15,11 +15,3 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-kit:section=in-progress -->
 ## Tarea en progreso
 
-Sin tarea en curso
-
-Última cerrada: Tarea 29 (comando `/agent-radar`). Backlog: Tareas 30 y 32 libres; 31 bloqueada por 30.
-
-<!-- agent-context-kit:section=paused -->
-## Tareas pausadas
-
-Ninguna

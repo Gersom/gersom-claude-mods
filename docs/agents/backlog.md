@@ -21,19 +21,12 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 34
+**Próximo número de tarea:** 35
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
-
-### Tarea 30 — Comando y botón para quitar agent-radar de la barra del prompt
-
-- **Descripción:** agregar un comando y un botón en `agent-radar` para quitar el mod de la barra del prompt (que la banda deje de dibujarse) sin apagar el radar.
-- **Decisiones/temas a definir antes de empezar:** cómo se vuelve a mostrar la banda si el botón vive en ella (solo el comando de la Tarea 29 u otro, o una línea mínima con un único botón); qué hace el radar mientras la banda está oculta (el pane y el ocultar filas técnicas siguen según ON/OFF). Se relaciona con las Tareas 29 y 31.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-11
 
 ### Tarea 32 — Mejoras de UX en agent-radar
 
@@ -42,15 +35,22 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-11
 
-<!-- agent-context-kit:section=blocked -->
-## Tareas bloqueadas / pospuestas
+### Tarea 34 — Revisar el error de subagentes en agent-radar
+
+- **Descripción:** los subagentes no se muestran en `agent-radar` cuando se ejecutan (ni en el pane ni en la lista viva); revisar por qué.
+- **Decisiones/temas a definir antes de empezar:** reproducir primero: superficie (terminal o escritorio), con el pane abierto antes o después de lanzar el subagente, y si aparece al terminar en el historial. Hipótesis a comprobar, sin darlas por ciertas: que `agent.spawn` no llegue al plugin con `agentId` en `next(e)` para los subagentes del tool `Agent` (el resultado quizá no trae `agentId` o el spawn va por otra ruta); que `turn.complete`/`tool.call` con `agentId` lleguen con otro identificador que el del spawn; que el pane no se redibuje al cambiar `subagents`; que el filtro `origin.plugin === 'engine'` o la poda de terminados los quite. Los tests usan un kit simulado que podría no reflejar el motor real.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-11
 
 ### Tarea 31 — Persistencia del estado de agent-radar
 
 - **Descripción:** persistir en `$.store` el estado de `agent-radar`: mod quitado de la barra del prompt, pane abierto y mod ON/OFF (hoy solo se guarda ON/OFF).
-- **Decisiones/temas a definir antes de empezar:** reabrir el pane al empezar la sesión choca con la regla de que el mod no abre el pane por su cuenta (bajo 144 columnas no se coloca si no lo pide el usuario): decidir si se reabre solo si cabe, o si basta recordar la preferencia. El estado «quitado de la barra» depende de la Tarea 30.
-- **Bloqueos:** [dependencia] Tarea 30 — el estado «mod quitado de la barra» aún no existe.
+- **Decisiones/temas a definir antes de empezar:** reabrir el pane al empezar la sesión choca con la regla de que el mod no abre el pane por su cuenta (bajo 144 columnas no se coloca si no lo pide el usuario): decidir si se reabre solo si cabe, o si basta recordar la preferencia. El estado «quitado de la barra» ya se persiste (Tarea 30, clave `bandHidden`); falta el del pane.
+- **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 30: el estado «mod quitado de la barra» no existía (ya existe, clave `bandHidden`; falta persistir el pane abierto).
 - **Agregada:** 2026-10-11
+
+<!-- agent-context-kit:section=blocked -->
+## Tareas bloqueadas / pospuestas
 
 <!-- agent-context-kit:section=grouped -->
 ## Tareas agrupadas

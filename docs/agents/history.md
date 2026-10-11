@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 30 — Comando y botón para quitar agent-radar de la barra del prompt
+
+- `agent-radar` ganó el botón `[ ✕ Hide ]` y los comandos `/agent-radar hide` y `/agent-radar show`: quitan y devuelven la banda sin apagar el radar (el pane y el ocultar filas técnicas siguen según ON/OFF). Se vuelve a mostrar solo con el comando, no con una línea mínima, para que «quitar» sea de verdad quitar.
+- La elección se guarda en `$.store` (`bandHidden`) y sobrevive a las sesiones, lo que deja listo el estado que necesita la Tarea 31. 122 tests; sin probar en un Claude Code real.
+
 ## 2026-10-11 — ✅ Tarea 29 — Comando para abrir el pane de agent-radar
 
 - `agent-radar` registra `/agent-radar`: sin argumento alterna el pane de detalle, y `open`/`close` lo abren o cierran a la fuerza; con el radar en OFF avisa y no abre nada. Es una segunda vía además del botón de la banda. El documento original del mod prohibía comandos slash; el operador lo pidió expresamente, así que el README lo aclara y el test pasó a exigir que solo exista este.
