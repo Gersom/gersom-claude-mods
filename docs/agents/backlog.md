@@ -49,13 +49,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-11
 
-### Tarea 33 — Crear el repo remoto de agent-radar
-
-- **Descripción:** crear el repo remoto `Gersom/claude-mod-agent-radar` en GitHub, subir `mods/agent-radar` (hoy solo local, sin remoto) y añadirlo al catálogo del central (`.claude-plugin/marketplace.json` y la tabla de mods del README).
-- **Decisiones/temas a definir antes de empezar:** visibilidad del repo (los otros mods son públicos); confirmar el nombre; antes de publicar, revisar el README y los manifiestos (`repository` y `homepage` ya apuntan a `Gersom/claude-mod-agent-radar`). Es una acción externa: se pide autorización explícita en el momento.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-11
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 

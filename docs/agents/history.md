@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 33 — Crear el repo remoto de agent-radar
+
+- Se creó `Gersom/claude-mod-agent-radar` (público, igual que los otros mods), se subió `mods/agent-radar` con sus 10 commits y se añadió al catálogo del central (`marketplace.json` y la tabla de mods del README). Hasta ahora el trabajo de `agent-radar` vivía solo en el disco local.
+- Público porque el catálogo instala los mods desde GitHub sin credenciales. No se comprobó la instalación desde el catálogo en una sesión real.
+
 ## 2026-10-11 — ✅ Tarea 25 — Soporte multi-idioma en agent-radar
 
 - `agent-radar` habla español o inglés según `settings.language`, sin botón de idioma, y cae a inglés cuando no puede detectarlo; «Claude Radar» no se traduce. Era lo que ya hacían `cache-watch` y `usage-meter`, con la diferencia de que aquí el idioma no se elige a mano.
