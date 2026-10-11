@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 29 — Comando para abrir el pane de agent-radar
+
+- `agent-radar` registra `/agent-radar`: sin argumento alterna el pane de detalle, y `open`/`close` lo abren o cierran a la fuerza; con el radar en OFF avisa y no abre nada. Es una segunda vía además del botón de la banda. El documento original del mod prohibía comandos slash; el operador lo pidió expresamente, así que el README lo aclara y el test pasó a exigir que solo exista este.
+- Para que el motor lo trate como una petición del usuario, `$.ui.open` tiene que ser el primer `await` del manejador (lo mismo que arregló el botón en terminal), por eso decide con variables de módulo y no lee estado antes de abrir. Su respuesta de una línea queda en la conversación, así que el consumo del mod pasó de «cero» a «prácticamente cero». Probado a mano por el operador; 118 tests.
+
 ## 2026-10-11 — ✅ Tarea 33 — Crear el repo remoto de agent-radar
 
 - Se creó `Gersom/claude-mod-agent-radar` (público, igual que los otros mods), se subió `mods/agent-radar` con sus 10 commits y se añadió al catálogo del central (`marketplace.json` y la tabla de mods del README). Hasta ahora el trabajo de `agent-radar` vivía solo en el disco local.

@@ -28,13 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 29 — Comando para abrir el pane de agent-radar
-
-- **Descripción:** agregar un comando slash que abra (y cierre) el pane de `agent-radar`, además del botón de la banda.
-- **Decisiones/temas a definir antes de empezar:** nombre del comando y si alterna o solo abre. Ojo: el documento original del mod ([`docs/claude-radar.md`](../claude-radar.md)) prohibía comandos slash; el operador pide este expresamente, así que se registra y se actualiza el README (hoy afirma «sin comandos») y el test «registers no slash command». Un comando del usuario cuenta como petición suya, por lo que el pane se coloca a cualquier ancho.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-11
-
 ### Tarea 30 — Comando y botón para quitar agent-radar de la barra del prompt
 
 - **Descripción:** agregar un comando y un botón en `agent-radar` para quitar el mod de la barra del prompt (que la banda deje de dibujarse) sin apagar el radar.
