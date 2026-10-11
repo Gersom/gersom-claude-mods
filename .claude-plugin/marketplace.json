@@ -12,6 +12,11 @@
       "name": "cache-watch",
       "source": { "source": "github", "repo": "Gersom/claude-mod-cache-watch" },
       "description": "Panel sobre el prompt que muestra si el caché de prompts está caliente o frío, con cuenta regresiva."
+    },
+    {
+      "name": "agent-radar",
+      "source": { "source": "github", "repo": "Gersom/claude-mod-agent-radar" },
+      "description": "Monitor visual y pasivo del agente principal y sus subagentes, con panel de detalle."
     }
   ]
 }
