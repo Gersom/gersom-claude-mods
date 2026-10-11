@@ -36,13 +36,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Desbloquea:** Tarea 16.
 - **Agregada:** 2026-10-09
 
-### Tarea 14 — Refinar el mod de caché
-
-- **Descripción:** refinar `cache-watch` (Tarea 13): cambiar su UX y agregarle más información.
-- **Decisiones/temas a definir antes de empezar:** qué cambios de UX y qué datos extra; lo define el operador (ideas ya habladas: % de aciertos de la última petición y de la sesión, tokens leídos y escritos de caché).
-- **Bloqueos:** [Resuelto el 2026-10-10] — [dependencia] Tarea 13 — el mod de caché aún no existía.
-- **Agregada:** 2026-10-09
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 

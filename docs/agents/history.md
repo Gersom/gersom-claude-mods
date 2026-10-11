@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-10 — ✅ Tarea 14 — Refinar el mod de caché
+
+- En terminal con poco ancho el panel de `cache-watch` omite «se enfría en», y mientras el caché está caliente muestra cuántos tokens se reescribirían si se enfría (`en frío reescribe ~84k` en el panel, `~84k en juego` en la barra de estado). Importa porque lo que el operador quería saber era qué pierde si deja enfriar el caché; el recorte con poco ancho quita primero ese dato, luego «se enfría en».
+- Se descartó mostrar el % de aciertos y un «ahorro» en dinero o límite: el mod no puede leer precios ni reglas de uso, y los mismos tokens ya dicen qué se evita. Probado a mano por el operador en parte; 74 tests.
+
 ## 2026-10-10 — ✅ Tarea 26 — Botón para cambiar a modo status en cache-watch
 
 - El panel de `cache-watch` lleva un botón `[=] Barra de estado` alineado a la derecha, dentro del borde, que pasa a la vista `status`; en esa vista no hay botón porque la línea de estado es texto plano, y de vuelta a `panel` se va solo con `/cache-watch`. Evita tener que escribir el comando para el cambio más habitual.
