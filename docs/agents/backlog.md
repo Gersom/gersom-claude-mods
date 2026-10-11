@@ -53,14 +53,14 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [dependencia] Tarea 15 — `claude-radar` aún no existe.
 - **Agregada:** 2026-10-09
 
-<!-- agent-context-kit:section=grouped -->
-## Tareas agrupadas
-
-No aplica todavía — ningún grupo formado.
-
 ### Tarea 25 — Soporte multi-idioma en claude-radar
 
 - **Descripción:** agregar soporte multi-idioma a `claude-radar` (español/inglés) igual que `usage-meter` y `cache-watch`, pero sin botón: el idioma se detecta solo desde `settings.language` y, si no se puede, va en inglés por defecto.
 - **Decisiones/temas a definir antes de empezar:** confirmar que el mod destinatario es `claude-radar` (supuesto del agente: `cache-watch` ya detecta el idioma y `usage-meter` también).
 - **Bloqueos:** [dependencia] Tarea 15 — `claude-radar` aún no existe.
 - **Agregada:** 2026-10-10
+
+<!-- agent-context-kit:section=grouped -->
+## Tareas agrupadas
+
+No aplica todavía — ningún grupo formado.
