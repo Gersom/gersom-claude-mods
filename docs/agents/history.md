@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 25 — Soporte multi-idioma en agent-radar
+
+- `agent-radar` habla español o inglés según `settings.language`, sin botón de idioma, y cae a inglés cuando no puede detectarlo; «Claude Radar» no se traduce. Era lo que ya hacían `cache-watch` y `usage-meter`, con la diferencia de que aquí el idioma no se elige a mano.
+- Para que el idioma pueda cambiar entre sesiones, el estado dejó de guardar frases ya escritas y guarda códigos (razones, actividades, título por defecto) que el dibujo traduce con el diccionario. Probado a mano por el operador; 108 tests.
+
 ## 2026-10-11 — ✅ Tarea 16 — Refinar el mod agent-radar
 
 - Todo el contenido de `agent-radar` pasó al pane (título del turno, fase y razón, tiempo, checklist, subagentes e historial); la banda sobre el prompt quedó en una línea con el nombre y los dos botones (detalle y ON/OFF). Así la banda no ocupa filas ni redibuja a 4 Hz, y el temporizador solo corre con el pane abierto. El pane sigue abriéndose solo con el botón.

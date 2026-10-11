@@ -21,19 +21,43 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-kit:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los usa el script de seguimiento de tareas de agent-context-kit.
 
-**Próximo número de tarea:** 29
+**Próximo número de tarea:** 33
 
 ---
 
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 25 — Soporte multi-idioma en agent-radar
+### Tarea 29 — Comando para abrir el pane de agent-radar
 
-- **Descripción:** agregar soporte multi-idioma a `agent-radar` (español/inglés) igual que `usage-meter` y `cache-watch`, pero sin botón: el idioma se detecta solo desde `settings.language` y, si no se puede, va en inglés por defecto (hoy toda su interfaz está en inglés).
-- **Decisiones/temas a definir antes de empezar:** confirmar que el mod destinatario es `agent-radar` (supuesto del agente: `cache-watch` ya detecta el idioma y `usage-meter` también).
-- **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 15 — `claude-radar` aún no existía.
-- **Agregada:** 2026-10-10
+- **Descripción:** agregar un comando slash que abra (y cierre) el pane de `agent-radar`, además del botón de la banda.
+- **Decisiones/temas a definir antes de empezar:** nombre del comando y si alterna o solo abre. Ojo: el documento original del mod ([`docs/claude-radar.md`](../claude-radar.md)) prohibía comandos slash; el operador pide este expresamente, así que se registra y se actualiza el README (hoy afirma «sin comandos») y el test «registers no slash command». Un comando del usuario cuenta como petición suya, por lo que el pane se coloca a cualquier ancho.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-11
+
+### Tarea 30 — Comando y botón para quitar agent-radar de la barra del prompt
+
+- **Descripción:** agregar un comando y un botón en `agent-radar` para quitar el mod de la barra del prompt (que la banda deje de dibujarse) sin apagar el radar.
+- **Decisiones/temas a definir antes de empezar:** cómo se vuelve a mostrar la banda si el botón vive en ella (solo el comando de la Tarea 29 u otro, o una línea mínima con un único botón); qué hace el radar mientras la banda está oculta (el pane y el ocultar filas técnicas siguen según ON/OFF). Se relaciona con las Tareas 29 y 31.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-11
+
+### Tarea 32 — Mejoras de UX en agent-radar
+
+- **Descripción:** ponerle borde y espacio a la banda de `agent-radar` como en `cache-watch` (borde redondo gris `#4b5563`, fila en blanco entre paneles en el escritorio) y cambiar el botón `[ ● Claude Radar: ON ]` a solo `ON`/`OFF`.
+- **Decisiones/temas a definir antes de empezar:** ninguno; el nombre «Claude Radar» ya está a la izquierda de la banda. Conviene hacerla junto con las Tareas 30 o 31 si tocan la misma banda.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-11
+
+<!-- agent-context-kit:section=blocked -->
+## Tareas bloqueadas / pospuestas
+
+### Tarea 31 — Persistencia del estado de agent-radar
+
+- **Descripción:** persistir en `$.store` el estado de `agent-radar`: mod quitado de la barra del prompt, pane abierto y mod ON/OFF (hoy solo se guarda ON/OFF).
+- **Decisiones/temas a definir antes de empezar:** reabrir el pane al empezar la sesión choca con la regla de que el mod no abre el pane por su cuenta (bajo 144 columnas no se coloca si no lo pide el usuario): decidir si se reabre solo si cabe, o si basta recordar la preferencia. El estado «quitado de la barra» depende de la Tarea 30.
+- **Bloqueos:** [dependencia] Tarea 30 — el estado «mod quitado de la barra» aún no existe.
+- **Agregada:** 2026-10-11
 
 <!-- agent-context-kit:section=grouped -->
 ## Tareas agrupadas

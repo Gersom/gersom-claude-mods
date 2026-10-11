@@ -17,7 +17,7 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 
 Sin tarea en curso
 
-Última cerrada: Tarea 16 (refinar `agent-radar`). Backlog: Tarea 25 libre.
+Última cerrada: Tarea 25 (multi-idioma de `agent-radar`). Backlog: Tareas 29, 30 y 32 libres; 31 bloqueada por 30.
 
 <!-- agent-context-kit:section=paused -->
 ## Tareas pausadas
