@@ -28,13 +28,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-kit:section=free -->
 ## Tareas libres
 
-### Tarea 16 — Refinar el mod agent-radar
-
-- **Descripción:** ajustar `agent-radar` (Tarea 15; antes llamado `claude-radar`, nombre reservado) tras verlo en uso.
-- **Decisiones/temas a definir antes de empezar:** qué refinar; lo define el operador al ver el mod. Pendiente de verificar en uso real lo que el README del mod lista en «Limitaciones reales de las APIs».
-- **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 15 — `claude-radar` aún no existía.
-- **Agregada:** 2026-10-09
-
 ### Tarea 25 — Soporte multi-idioma en agent-radar
 
 - **Descripción:** agregar soporte multi-idioma a `agent-radar` (español/inglés) igual que `usage-meter` y `cache-watch`, pero sin botón: el idioma se detecta solo desde `settings.language` y, si no se puede, va en inglés por defecto (hoy toda su interfaz está en inglés).

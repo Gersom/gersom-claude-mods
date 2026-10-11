@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ✅ Tarea 16 — Refinar el mod agent-radar
+
+- Todo el contenido de `agent-radar` pasó al pane (título del turno, fase y razón, tiempo, checklist, subagentes e historial); la banda sobre el prompt quedó en una línea con el nombre y los dos botones (detalle y ON/OFF). Así la banda no ocupa filas ni redibuja a 4 Hz, y el temporizador solo corre con el pane abierto. El pane sigue abriéndose solo con el botón.
+- En terminal el pane no se colocaba: el botón esperaba una lectura de estado antes de abrir y el motor ya no lo trataba como una pulsación del usuario. Abrir como primera acción lo arregló, y el toast de fallo ahora da el motivo del motor. Probado a mano por el operador en terminal y escritorio; 92 tests.
+
 ## 2026-10-11 — ✅ Tarea 28 — Implementar pane para agent-radar
 
 - `agent-radar` ganó un `Pane` de detalle que se abre y cierra solo con el botón `[ ◧ Detail ]` de la banda: checklist completo, subagentes vivos con su tarea completa y un historial (hasta 50) de los terminados, que la banda sigue retirando a los 5 s. Solo se abre por una pulsación porque un pane abierto por el mod bajo 144 columnas no se coloca; el contenido (detalle vivo más historial) lo eligió el operador.
