@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-11 — ❌ Tarea 34 — Revisar el error de subagentes en agent-radar
+
+- Descartada: no era un fallo de código. Los subagentes no aparecían en el pane porque el mod en uso era una versión anterior sin recargar; tras recargarlo (y con un diagnóstico temporal que ya se quitó) aparecieron bien en el pane.
+- Si vuelve a pasar, recargar el mod antes de investigar. No hubo cambios de código.
+
 ## 2026-10-11 — ✅ Tarea 30 — Comando y botón para quitar agent-radar de la barra del prompt
 
 - `agent-radar` ganó el botón `[ ✕ Hide ]` y los comandos `/agent-radar hide` y `/agent-radar show`: quitan y devuelven la banda sin apagar el radar (el pane y el ocultar filas técnicas siguen según ON/OFF). Se vuelve a mostrar solo con el comando, no con una línea mínima, para que «quitar» sea de verdad quitar.
