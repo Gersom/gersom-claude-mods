@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-25 — ✅ Tarea 35 — Agregar detalles faltantes en agent-radar (modelo y esfuerzo)
+
+- El pane de `agent-radar` muestra el modelo y el esfuerzo del agente principal (en `Now`) y de cada subagente (junto al nombre), en forma corta (`opus-4-5 · high`). Antes solo salía el nombre y no se sabía con qué modelo trabajaba cada agente.
+- Salen del hook `turn.step`, que el motor lanza en cada petición al modelo con `model` y `effort` (este falta en modelos sin esfuerzo); solo observa, no cuesta tokens. Un subagente arranca con el modelo de su spawn hasta su primera petición. 128 tests; sin probar en un Claude Code real.
+
 ## 2026-10-11 — ❌ Tarea 34 — Revisar el error de subagentes en agent-radar
 
 - Descartada: no era un fallo de código. Los subagentes no aparecían en el pane porque el mod en uso era una versión anterior sin recargar; tras recargarlo (y con un diagnóstico temporal que ya se quitó) aparecieron bien en el pane.

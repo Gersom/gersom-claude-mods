@@ -42,13 +42,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 30: el estado «mod quitado de la barra» no existía (ya existe, clave `bandHidden`; falta persistir el pane abierto).
 - **Agregada:** 2026-10-11
 
-### Tarea 35 — Agregar detalles faltantes en agent-radar (modelo y esfuerzo)
-
-- **Descripción:** mostrar en el pane de `agent-radar`, además del nombre, el modelo que usa el agente líder y cada subagente, y su esfuerzo.
-- **Decisiones/temas a definir antes de empezar:** verificar qué datos da el motor: `agent.spawn` devuelve `model` del subagente (alias o id), pero no está comprobado de dónde sale el modelo del agente líder ni si existe un dato de esfuerzo para ninguno de los dos (mirar `.claude-plugin/types/claude-code/index.d.ts` y `$.settings.read()`); si no existe, decidir si se omite o se infiere. Decidir también el formato (en la misma línea del nombre o debajo) y cómo se acorta el id del modelo en un pane angosto.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-25
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
