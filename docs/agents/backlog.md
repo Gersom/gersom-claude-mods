@@ -42,26 +42,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 30: el estado «mod quitado de la barra» no existía (ya existe, clave `bandHidden`; falta persistir el pane abierto).
 - **Agregada:** 2026-10-11
 
-### Tarea 39 — Mejoras UX: misma estructura vertical para ejecución actual e historial
-
-- **Descripción:** el ancho del pane es poco para tantos datos en una sola línea, así que cada agente pasa a tener una estructura vertical, igual en «Ejecución actual» y en «Historial»: el nombre con modelo y esfuerzo en una línea y, debajo, el estado con el tiempo y los tokens. Ejemplo pedido por el operador (historial con un turno):
-  ```
-  Historial (4 ejecuciones)
-  _________________________
-
-  ✓ <título de la petición del operador...>
-    Hecho · 8s · 1.3k tokens
-      ✓ Agente principal · sonnet-5-5 · medium
-        Hecho · 8s · 1.3k tokens
-      ✓ Revisor · sonnet-5-5 · medium
-        <título de su tarea>
-        Hecho · 8s · 1.3k tokens
-  ```
-  El turno lleva su título y, debajo, su estado, tiempo y tokens; sus agentes van sangrados, cada uno con nombre, modelo y esfuerzo, la tarea (si la hay) y su estado, tiempo y tokens. «Ejecución actual» usa la misma estructura. El contador del título del historial va entre paréntesis: `Historial (4 ejecuciones)`.
-- **Decisiones/temas a definir antes de empezar:** **Barras de carga (decidido por el operador):** una sola por el agente principal y una por cada subagente, y ninguna más (sin barras por cada tarea del checklist ni otras). Queda por decidir dónde va la barra de cada agente (hoy va a la derecha de la fila: bajarla a la línea de estado); cómo se alinean el tiempo y los tokens sin columnas a la derecha; si el contador del encabezado de la ejecución actual (tiempo total, «N activos») sigue a la derecha del título o pasa a una línea propia. Se hace junto con la Tarea 38 (títulos de sección con línea debajo) porque ambas rehacen la cabecera y las filas del pane, y se relaciona con las Tareas 32 y 37.
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-26
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 

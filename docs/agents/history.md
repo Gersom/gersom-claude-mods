@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-26 — ✅ Tarea 39 — Mejoras UX: misma estructura vertical para ejecución actual e historial
+
+- Cada agente del pane de `agent-radar` se dibuja en líneas verticales, igual en «Ejecución actual» y en «Historial»: nombre con `· modelo · esfuerzo`, la tarea, y una línea de estado `Trabajando · tiempo · tokens` con la barra de carga al final. Antes todo iba en una sola línea con columnas a la derecha y el ancho del pane no daba para tanto.
+- Hay una sola barra por el agente principal y una por cada subagente activo, sin porcentajes y sin barras en el checklist, en agentes terminados ni en el historial. Se quitaron las columnas, los umbrales de ancho y los separadores entre agentes. El historial no usa el verde (lo terminado con éxito va en el color normal). Un revisor halló que los títulos y el modelo no se encogían y podían desbordar en panes estrechos; se corrigió. Sin probar en un Claude Code real; 148 tests pasan y 3 fallan por un cambio del kit (2.1.310) anterior a esta tarea.
+
 ## 2026-10-26 — ✅ Tarea 38 — Mejoras UX: títulos de sección de agent-radar
 
 - Los títulos del pane de `agent-radar` («Ejecución actual» e «Historial») tienen el mismo formato, `<título> · <subtítulos>`, con los subtítulos en gris (el tiempo y los tokens del turno, o el número de ejecuciones), y debajo una línea de guiones bajos de 30 columnas, igual en las dos secciones, desde el inicio de la fila y con una fila en blanco después. Antes el tiempo total iba alineado a la derecha y la línea entre secciones se veía muy llamativa.
