@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-26 — ✅ Tarea 37 — Más mejoras UX en agent-radar
+
+- El pane de `agent-radar` adopta el diseño de referencia del operador, adaptado a lo que se dibuja en terminal y escritorio: tokens por agente y por turno, encabezado con tiempo total y tokens, contador de subagentes activos, filas alineadas con barra sin porcentaje y separadores entre secciones. El historial va siempre abierto, sin plegables, y sus turnos se separan solo con una fila en blanco porque las líneas resultaban invasivas.
+- Los tokens salen del `usage` que el motor ya informa en cada `turn.step` (entrada + salida + caché escrita, sin lecturas de caché), así que no cuestan tokens al modelo. Las barras siguen sin inventar porcentajes. El título del turno admite 80 caracteres. Sin probar en un Claude Code real; 148 tests. Pendiente menor: los umbrales de ancho no descuentan la sangría (nombre muy corto en panes de ~38 columnas).
+
 ## 2026-10-26 — ✅ Tarea 36 — Mejoras UX en el pane de agent-radar (ejecución actual e historial por turno)
 
 - El pane de `agent-radar` se agrupa por turno: «Ejecución actual» (título, barra de estado, Main agent / Agente principal con modelo, esfuerzo, tiempo y checklist, y subagentes con su tarea) e «Historial» con un grupo por turno terminado (hasta 10, solo en memoria). Sin turno en marcha dice que todo está listo. Antes el historial era una lista plana de subagentes y no se veía qué subagente era de qué petición.
