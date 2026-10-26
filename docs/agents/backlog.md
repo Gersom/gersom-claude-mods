@@ -42,16 +42,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 30: el estado «mod quitado de la barra» no existía (ya existe, clave `bandHidden`; falta persistir el pane abierto).
 - **Agregada:** 2026-10-11
 
-### Tarea 36 — Mejoras UX en el pane de agent-radar (ejecución actual e historial por turno)
-
-- **Descripción:** separar visualmente «Ejecución actual» e «Historial» en el pane de `agent-radar`, agrupando todo por turno. Un turno empieza cuando el operador pide algo y dura hasta que el agente principal y sus subagentes terminan, o hasta que el operador cancela.
-  - **Ejecución actual:** el título «Ejecución actual»; debajo, el título de lo que hace el agente; debajo, una barra de progreso o ejecución que dice si aún se ejecuta algo o ya terminó; debajo, el agente principal (main agent) con nombre, modelo, esfuerzo, tiempo y progreso; debajo, si hay subagentes, cada uno con nombre, modelo, esfuerzo, tiempo, progreso y la tarea que hace.
-  - **Al terminar todo:** el turno pasa al historial y «Ejecución actual» muestra un mensaje de todo terminado y listo para recibir más instrucciones.
-  - **Historial:** un grupo por turno; cada grupo contiene el agente principal y sus subagentes, o solo el principal si no usó ninguno.
-- **Decisiones/temas a definir antes de empezar:** hoy el estado guarda un solo turno y un historial plano de subagentes (`history`, hasta 50): hace falta un historial de turnos (cuántos se guardan, y si el agente principal también tiene entrada). Definir qué es «progreso» por agente sin inventar porcentajes (el radar nunca los inventa; hoy la barra es indeterminada) y qué texto lleva el mensaje de «todo terminado». El checklist del turno actual: dónde queda dentro de la nueva estructura. Textos nuevos en español e inglés (`i18n.ts`). Se relaciona con la Tarea 32 (UX de la banda).
-- **Bloqueos:** Ninguno.
-- **Agregada:** 2026-10-25
-
 <!-- agent-context-kit:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 

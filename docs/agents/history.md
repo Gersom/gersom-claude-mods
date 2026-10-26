@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-26 — ✅ Tarea 36 — Mejoras UX en el pane de agent-radar (ejecución actual e historial por turno)
+
+- El pane de `agent-radar` se agrupa por turno: «Ejecución actual» (título, barra de estado, Main agent / Agente principal con modelo, esfuerzo, tiempo y checklist, y subagentes con su tarea) e «Historial» con un grupo por turno terminado (hasta 10, solo en memoria). Sin turno en marcha dice que todo está listo. Antes el historial era una lista plana de subagentes y no se veía qué subagente era de qué petición.
+- Un turno dura hasta que terminan el principal y todos sus subagentes; cancelar lo archiva de inmediato y detiene a los subagentes activos. El revisor halló que `turn.start` también llega por subagentes y partía el turno; ahora se ignora. Sin probar en un Claude Code real; 137 tests. Pendiente menor: el historial no guarda el motivo de un error.
+
 ## 2026-10-25 — ✅ Tarea 35 — Agregar detalles faltantes en agent-radar (modelo y esfuerzo)
 
 - El pane de `agent-radar` muestra el modelo y el esfuerzo del agente principal (en `Now`) y de cada subagente (junto al nombre), en forma corta (`opus-4-5 · high`). Antes solo salía el nombre y no se sabía con qué modelo trabajaba cada agente.
