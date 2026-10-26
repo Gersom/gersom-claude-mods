@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-26 — ✅ Tarea 38 — Mejoras UX: títulos de sección de agent-radar
+
+- Los títulos del pane de `agent-radar` («Ejecución actual» e «Historial») tienen el mismo formato, `<título> · <subtítulos>`, con los subtítulos en gris (el tiempo y los tokens del turno, o el número de ejecuciones), y debajo una línea de guiones bajos de 30 columnas, igual en las dos secciones, desde el inicio de la fila y con una fila en blanco después. Antes el tiempo total iba alineado a la derecha y la línea entre secciones se veía muy llamativa.
+- Se descartó la palabra «Tiempo total» del título (y su texto) y los paréntesis del contador. Sin probar en un Claude Code real; 146 tests pasan y 3 fallan: ya fallaban antes de esta tarea (desde que el Claude Code instalado es el 2.1.310, el mod se hizo con el 2.1.296) y no se investigaron.
+
 ## 2026-10-26 — ✅ Tarea 37 — Más mejoras UX en agent-radar
 
 - El pane de `agent-radar` adopta el diseño de referencia del operador, adaptado a lo que se dibuja en terminal y escritorio: tokens por agente y por turno, encabezado con tiempo total y tokens, contador de subagentes activos, filas alineadas con barra sin porcentaje y separadores entre secciones. El historial va siempre abierto, sin plegables, y sus turnos se separan solo con una fila en blanco porque las líneas resultaban invasivas.
