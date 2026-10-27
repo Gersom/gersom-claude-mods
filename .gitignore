@@ -1,2 +1,5 @@
 # Cada mod vive en su propio repo dentro de mods/ (su .git propio); este repo no los versiona
 mods/
+
+# Índice local de CodeGraph
+.codegraph/
