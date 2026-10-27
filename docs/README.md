@@ -15,7 +15,9 @@ docs/
 │   └── history.md        # tareas cerradas y por qué
 └── project/
     ├── architecture.md   # estructura del código y dónde va cada cosa nueva
-    └── stack.md          # decisiones de stack que no se ven en las dependencias
+    └── decisions/
+        ├── README.md     # índice de decisiones técnicas, un archivo por tema
+        └── stack.md      # decisiones de stack que no se ven en las dependencias
 ```
 
 Para ubicarte en el código o saber dónde va algo nuevo: [`project/architecture.md`](./project/architecture.md).
