@@ -49,7 +49,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 ### Tarea 42 — Evaluar la integración visual de los mods
 
 - **Descripción:** evaluar cómo se ven los mods juntos (consistencia visual: bordes, espacios, colores, tipografía entre paneles y bandas) y proponer ajustes para que se integren mejor.
-- **Decisiones/temas a definir antes de empezar:** ninguno. Relacionada con la Tarea 32 (borde y espacio de `agent-radar`).
+- **Decisiones/temas a definir antes de empezar:** ninguno. Relacionada con la Tarea 32 (cerrada: el borde de la banda de `agent-radar` se descartó; ver `history.md`).
 - **Bloqueos:** [dependencia] Tarea 41: conviene evaluar la integración una vez resuelta la UX de `usage-meter`.
 - **Agregada:** 2026-10-27
 

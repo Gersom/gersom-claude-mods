@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-27 — ✅ Tarea 32 — Mejoras de UX en agent-radar
+
+- El botón de `agent-radar` pasa de `[ ● Agent Radar: ON ]` a `[ ● ON ]` / `[ ● OFF ]`: el nombre ya está a la izquierda de la banda y repetirlo ocupaba espacio. Los avisos breves al pulsar conservan `Agent Radar: ON/OFF`.
+- Lo del borde y el espacio de la banda (como `cache-watch`) se descartó: el operador está conforme con la banda sin borde, igual que ahora `usage-meter`. No volver a proponerlo sin verlo; la consistencia visual entre mods se evalúa en la Tarea 42. 148 tests pasan y 3 fallan, los mismos de antes (kit 2.1.310). Sin push.
+
 ## 2026-10-27 — ✅ Tarea 44 — Renombrar «Claude Radar» a «Agent Radar» en la pantalla
 
 - El título visible de `agent-radar` pasa a «Agent Radar»: banda, botón `Agent Radar: ON/OFF`, avisos, descripción del comando, tests y README del mod. Así coincide con el identificador del plugin (`agent-radar`) en vez de usar un nombre que el kit no permite como id.
