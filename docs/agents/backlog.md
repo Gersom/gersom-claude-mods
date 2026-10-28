@@ -46,14 +46,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 <!-- agent-context-skill:section=blocked -->
 ## Tareas bloqueadas / pospuestas
 
-### Tarea 32 — Mejoras de UX en agent-radar
-
-- **Descripción:** ponerle borde y espacio a la banda de `agent-radar` como en `cache-watch` (borde redondo gris `#4b5563`, fila en blanco entre paneles en el escritorio) y cambiar el botón `[ ● Agent Radar: ON ]` a solo `ON`/`OFF`.
-- **Decisiones/temas a definir antes de empezar:** ninguno; el nombre «Agent Radar» ya está a la izquierda de la banda.
-- **Bloqueos:** [postergada] el operador está conforme con `agent-radar` como está (2026-10-27). Se retoma cuando se junten más mejoras de UX que lo justifiquen: agregarlas acá (en `Detalles`) y, cuando sean considerables, desbloquearla.
-- **Detalles:** mejoras pendientes hasta ahora: solo las dos de la descripción (ninguna hecha). Las Tareas 41 y 42 pueden aportar más.
-- **Agregada:** 2026-10-11
-
 ### Tarea 42 — Evaluar la integración visual de los mods
 
 - **Descripción:** evaluar cómo se ven los mods juntos (consistencia visual: bordes, espacios, colores, tipografía entre paneles y bandas) y proponer ajustes para que se integren mejor.

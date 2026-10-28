@@ -15,10 +15,13 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-skill:section=in-progress -->
 ## Tarea en progreso
 
+Tarea 32 — Mejoras de UX en agent-radar
 
-Sin tarea en curso
+Tarea chica, sin plan. Alcance final acordado con el operador (2026-10-27): solo cambiar el botón `[ ● Agent Radar: ON ]` a `[ ● ON ]` / `[ ● OFF ]`; el borde y el espacio de la banda quedan **descartados**. Hecho en el mod `agent-radar` (commit `feat(T-32): shorten the ON/OFF button to just ON or OFF`): `buttonLabel`, tests y README. Los avisos (toasts) siguen diciendo `Agent Radar: ON/OFF`. Los 3 tests que fallan ya fallaban antes (kit 2.1.310).
 
-Última cerrada: Tarea 44 (título «Agent Radar»). Backlog: Tareas 41 y 43 libres; la 32 pospuesta (el operador está conforme con `agent-radar`) y la 42 bloqueada por la 41.
+**Próximo paso concreto:** el operador prueba a mano y pide cerrar la tarea (Regla 6); al cerrar, en `history.md` registrar que el borde se descartó.
+
+Última cerrada: Tarea 44. Backlog: Tareas 41 y 43 libres; la 42 bloqueada por la 41.
 
 <!-- agent-context-skill:section=paused -->
 ## Tareas pausadas
