@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-skill:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los lee cualquier herramienta de seguimiento de tareas que use el proyecto.
 
-**Próximo número de tarea:** 44
+**Próximo número de tarea:** 45
 
 ---
 
@@ -30,8 +30,8 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 ### Tarea 32 — Mejoras de UX en agent-radar
 
-- **Descripción:** ponerle borde y espacio a la banda de `agent-radar` como en `cache-watch` (borde redondo gris `#4b5563`, fila en blanco entre paneles en el escritorio) y cambiar el botón `[ ● Claude Radar: ON ]` a solo `ON`/`OFF`.
-- **Decisiones/temas a definir antes de empezar:** ninguno; el nombre «Claude Radar» ya está a la izquierda de la banda. Conviene hacerla junto con las Tareas 30 o 31 si tocan la misma banda.
+- **Descripción:** ponerle borde y espacio a la banda de `agent-radar` como en `cache-watch` (borde redondo gris `#4b5563`, fila en blanco entre paneles en el escritorio) y cambiar el botón `[ ● Agent Radar: ON ]` a solo `ON`/`OFF`.
+- **Decisiones/temas a definir antes de empezar:** ninguno; el nombre «Agent Radar» ya está a la izquierda de la banda. Conviene hacerla junto con las Tareas 30 o 31 si tocan la misma banda.
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-11
 
