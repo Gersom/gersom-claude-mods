@@ -15,10 +15,15 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-skill:section=in-progress -->
 ## Tarea en progreso
 
+Tarea 43 — Pulir usage-meter: tests del panel y tipos
 
-Sin tarea en curso
+Tarea chica, sin plan. Hecho en el mod `usage-meter` (commit `fix(T-43): clear the type errors of tsc and note what the tests cannot cover`, `d68e6f8`): `bunx tsc --noEmit` ya no da errores (claves de lista `key={`${at}`}`, valores posiblemente `undefined` en `format.ts` y `format.test.ts`); 68 tests pasan.
 
-Última cerrada: Tarea 32 (botón ON/OFF de agent-radar). Backlog: Tareas 42 y 43 libres.
+**No se pudo:** los tests del hook `ui.close` (cierre de la persona) y del orden «`ui.open` primer `await`» en el botón. El arnés de pruebas del motor (`$.ui` solo trae `render`, `scroll`, `focus`, `press`, `input`, `select`, `mount`) no tiene `close` ni deja observar ese orden. Quedó escrito en «Limitaciones conocidas» del README del mod; el test del comando ya cubre el orden para ese camino. Al cerrar, registrarlo así en `history.md`.
+
+**Próximo paso concreto:** el operador pide cerrar la tarea (Regla 6).
+
+Última cerrada: Tarea 41 (descartada). Backlog: Tarea 42 libre.
 
 <!-- agent-context-skill:section=paused -->
 ## Tareas pausadas
