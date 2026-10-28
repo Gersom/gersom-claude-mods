@@ -15,13 +15,10 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 <!-- agent-context-skill:section=in-progress -->
 ## Tarea en progreso
 
-Tarea 44 — Renombrar «Claude Radar» a «Agent Radar» en la pantalla
 
-Tarea chica, sin plan. Hecha en el mod `agent-radar` (commit `feat(T-44): rename the visible title to Agent Radar`): `NAME`, textos de los botones, avisos y descripción del comando, tests y README. El archivo `hooks/claude-radar.tsx` y `docs/claude-radar.md` conservan su nombre; las entradas de `history.md` no se tocaron (son historia). Los 3 tests que fallan ya fallaban antes (kit 2.1.310).
+Sin tarea en curso
 
-**Próximo paso concreto:** el operador prueba a mano y pide cerrar la tarea (Regla 6).
-
-Última cerrada: Tarea 31 (descartada). Backlog: Tareas 32, 41 y 43 libres; la 42 bloqueada por la 41.
+Última cerrada: Tarea 44 (título «Agent Radar»). Backlog: Tareas 41 y 43 libres; la 32 pospuesta (el operador está conforme con `agent-radar`) y la 42 bloqueada por la 41.
 
 <!-- agent-context-skill:section=paused -->
 ## Tareas pausadas

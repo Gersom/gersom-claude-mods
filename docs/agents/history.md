@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-27 — ✅ Tarea 44 — Renombrar «Claude Radar» a «Agent Radar» en la pantalla
+
+- El título visible de `agent-radar` pasa a «Agent Radar»: banda, botón `Agent Radar: ON/OFF`, avisos, descripción del comando, tests y README del mod. Así coincide con el identificador del plugin (`agent-radar`) en vez de usar un nombre que el kit no permite como id.
+- No se tocaron `hooks/claude-radar.tsx`, `docs/claude-radar.md` ni las entradas anteriores de este historial. 148 tests pasan y 3 fallan, los mismos que ya fallaban antes (kit 2.1.310). Sin push.
+
 ## 2026-10-27 — ❌ Tarea 31 — Persistencia del estado de agent-radar
 
 - Descartada: ya se guardaban el ON/OFF y «banda quitada»; solo faltaba persistir el panel abierto, y reabrirlo al empezar la sesión choca con la regla de que el mod nunca abre el panel por su cuenta (bajo 144 columnas ni se coloca). Basta con el botón de detalle o `/agent-radar` cuando se necesite.
