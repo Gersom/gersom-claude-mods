@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-27 — ✅ Tarea 43 — Pulir usage-meter: tests del panel y tipos
+
+- `bunx tsc --noEmit` ya no da errores en `usage-meter` (claves de lista como texto y valores posiblemente `undefined` en `format.ts` y sus tests), sin cambiar el comportamiento. Era lo único que quedaba de los pendientes del revisor de la Tarea 40, tras descartar reiniciar el idioma al terminar la sesión, cancelar los timers de la animación y actualizar la descripción del comando.
+- No se hicieron los tests del cierre del panel por la persona ni del orden «`ui.open` primer `await`» en el botón: el arnés de pruebas del motor no tiene `$.ui.close` ni deja observar ese orden. Queda anotado en «Limitaciones conocidas» del README del mod; el test del comando cubre el orden de ese camino. 68 tests pasan; sin push.
+
 ## 2026-10-27 — ❌ Tarea 41 — Evaluar la UX de usage-meter
 
 - Descartada: al operador le gusta cómo quedó `usage-meter` tras la Tarea 40 (banda de una línea y panel lateral), así que no hay una evaluación que hacer. No se cambió código.
