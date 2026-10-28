@@ -18,7 +18,7 @@ Estado "en caliente": en qué se está ahora. **Se sobrescribe completo** en cad
 
 Sin tarea en curso
 
-Última cerrada: Tarea 39 (estructura vertical por agente en agent-radar). Backlog: Tareas 31 y 32 libres.
+Última cerrada: Tarea 40 (usage-meter en panel lateral). Backlog: Tareas 31, 32, 41 y 43 libres; la 42 sigue bloqueada por la 41.
 
 <!-- agent-context-skill:section=paused -->
 ## Tareas pausadas

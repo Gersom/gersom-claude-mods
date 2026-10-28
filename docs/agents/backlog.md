@@ -21,7 +21,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 **Anclas de sección:** no borres ni muevas los comentarios `<!-- agent-context-skill:section=... -->` (`free`, `blocked`, `grouped`) que preceden a cada sección: los lee cualquier herramienta de seguimiento de tareas que use el proyecto.
 
-**Próximo número de tarea:** 40
+**Próximo número de tarea:** 44
 
 ---
 
@@ -42,8 +42,30 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 30: el estado «mod quitado de la barra» no existía (ya existe, clave `bandHidden`; falta persistir el pane abierto).
 - **Agregada:** 2026-10-11
 
+### Tarea 41 — Evaluar la UX de usage-meter
+
+- **Descripción:** evaluar la experiencia de uso del mod `usage-meter` ya convertido en panel lateral (legibilidad, jerarquía, interacción) y proponer mejoras.
+- **Decisiones/temas a definir antes de empezar:** ninguno.
+- **Bloqueos:** [Resuelto el 2026-10-27] — [dependencia] Tarea 40: la evaluación se hace sobre el panel lateral, que todavía no existía.
+- **Desbloquea:** Tarea 42.
+- **Agregada:** 2026-10-27
+
+### Tarea 43 — Pulir usage-meter: sesión y tests del panel
+
+- **Descripción:** pendientes menores que halló el revisor de la Tarea 40: (1) agregar `session.end` que reinicie el idioma elegido a mano (el README dice que se pierde al reiniciar la sesión, y hoy no pasa tras `/clear`) y cancele los timers de animación (`glides`); (2) la descripción del comando `/usage-meter` queda en el idioma del inicio de la sesión; (3) tests del hook `ui.close` (cierre hecho por la persona) y del orden «`ui.open` es el primer `await`» en el botón: el arnés no expone `$.ui.close`, hay que ver cómo cubrirlo; (4) `tsc --noEmit` daba errores en `format.ts`, `format.test.ts` y `register.tsx` que no se compararon con el estado anterior.
+- **Decisiones/temas a definir antes de empezar:** si se quiere cubrir el cierre de la persona con un test aunque haya que ampliar el arnés, o basta la revisión manual.
+- **Bloqueos:** Ninguno.
+- **Agregada:** 2026-10-27
+
 <!-- agent-context-skill:section=blocked -->
 ## Tareas bloqueadas / pospuestas
+
+### Tarea 42 — Evaluar la integración visual de los mods
+
+- **Descripción:** evaluar cómo se ven los mods juntos (consistencia visual: bordes, espacios, colores, tipografía entre paneles y bandas) y proponer ajustes para que se integren mejor.
+- **Decisiones/temas a definir antes de empezar:** ninguno. Relacionada con la Tarea 32 (borde y espacio de `agent-radar`).
+- **Bloqueos:** [dependencia] Tarea 41: conviene evaluar la integración una vez resuelta la UX de `usage-meter`.
+- **Agregada:** 2026-10-27
 
 <!-- agent-context-skill:section=grouped -->
 ## Tareas agrupadas

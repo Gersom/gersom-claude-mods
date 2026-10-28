@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-27 — ✅ Tarea 40 — Mover usage-meter a un panel lateral
+
+- `usage-meter` pasa a una banda de una línea sobre el prompt, sin borde (`Usage Meter: Contexto 9% · Límite 5h 4% · Semanal 3%` con los botones `[ ◧ Abrir ]` e idioma) y un panel lateral con el detalle: barras, subtítulos bajo la barra, leyenda de categorías siempre abierta. Antes el recuadro con tres vistas ocupaba mucho espacio sobre el prompt, y el panel tiene lugar de sobra. Se eliminaron las vistas compacta y una línea, y el panel nunca se abre solo (botón o `/usage-meter`), igual que `agent-radar`.
+- Un revisor no halló bugs funcionales; sus pendientes menores pasaron a la Tarea 43. El operador probó el resultado a mano y funciona; 68 tests y `claude plugin validate .` pasan. Los commits están en el repo del mod (`dd763ea` … `faa5aa9`), sin push.
+
 ## 2026-10-26 — ✅ Tarea 39 — Mejoras UX: misma estructura vertical para ejecución actual e historial
 
 - Cada agente del pane de `agent-radar` se dibuja en líneas verticales, igual en «Ejecución actual» y en «Historial»: nombre con `· modelo · esfuerzo`, la tarea, y una línea de estado `Trabajando · tiempo · tokens` con la barra de carga al final. Antes todo iba en una sola línea con columnas a la derecha y el ancho del pane no daba para tanto.
