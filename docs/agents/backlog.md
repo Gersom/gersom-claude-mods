@@ -30,7 +30,7 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 
 ### Tarea 43 — Pulir usage-meter: tests del panel y tipos
 
-- **Descripción:** pendientes menores que halló el revisor de la Tarea 40: (1) la descripción del comando `/usage-meter` queda en el idioma del inicio de la sesión; (2) tests del hook `ui.close` (cierre hecho por la persona) y del orden «`ui.open` es el primer `await`» en el botón: el arnés no expone `$.ui.close`, hay que ver cómo cubrirlo; (3) `tsc --noEmit` daba errores en `format.ts`, `format.test.ts` y `register.tsx` que no se compararon con el estado anterior. Descartado por el operador (2026-10-27): reiniciar el idioma elegido a mano al terminar la sesión (se queda) y cancelar los timers de la animación (casi no tiene efecto).
+- **Descripción:** pendientes menores que halló el revisor de la Tarea 40: (1) tests del hook `ui.close` (cierre hecho por la persona) y del orden «`ui.open` es el primer `await`» en el botón: el arnés no expone `$.ui.close`, hay que ver cómo cubrirlo; (2) `tsc --noEmit` daba errores en `format.ts`, `format.test.ts` y `register.tsx` que no se compararon con el estado anterior. Descartado por el operador (2026-10-27): reiniciar el idioma elegido a mano al terminar la sesión (se queda), cancelar los timers de la animación (casi no tiene efecto) y actualizar la descripción del comando al cambiar de idioma.
 - **Decisiones/temas a definir antes de empezar:** si se quiere cubrir el cierre de la persona con un test aunque haya que ampliar el arnés, o basta la revisión manual.
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-27
