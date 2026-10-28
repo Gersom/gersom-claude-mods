@@ -35,13 +35,6 @@ Cola de tareas pendientes: el "qué falta" a nivel proyecto. No es la tarea en c
 - **Bloqueos:** Ninguno.
 - **Agregada:** 2026-10-11
 
-### Tarea 31 — Persistencia del estado de agent-radar
-
-- **Descripción:** persistir en `$.store` el estado de `agent-radar`: mod quitado de la barra del prompt, pane abierto y mod ON/OFF (hoy solo se guarda ON/OFF).
-- **Decisiones/temas a definir antes de empezar:** reabrir el pane al empezar la sesión choca con la regla de que el mod no abre el pane por su cuenta (bajo 144 columnas no se coloca si no lo pide el usuario): decidir si se reabre solo si cabe, o si basta recordar la preferencia. El estado «quitado de la barra» ya se persiste (Tarea 30, clave `bandHidden`); falta el del pane.
-- **Bloqueos:** [Resuelto el 2026-10-11] — [dependencia] Tarea 30: el estado «mod quitado de la barra» no existía (ya existe, clave `bandHidden`; falta persistir el pane abierto).
-- **Agregada:** 2026-10-11
-
 ### Tarea 41 — Evaluar la UX de usage-meter
 
 - **Descripción:** evaluar la experiencia de uso del mod `usage-meter` ya convertido en panel lateral (legibilidad, jerarquía, interacción) y proponer mejoras.

@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-27 — ❌ Tarea 31 — Persistencia del estado de agent-radar
+
+- Descartada: ya se guardaban el ON/OFF y «banda quitada»; solo faltaba persistir el panel abierto, y reabrirlo al empezar la sesión choca con la regla de que el mod nunca abre el panel por su cuenta (bajo 144 columnas ni se coloca). Basta con el botón de detalle o `/agent-radar` cuando se necesite.
+- No hubo cambios de código. Si se vuelve a proponer, recordar la preferencia sin reabrir solo tampoco aporta lo suficiente.
+
 ## 2026-10-27 — ✅ Tarea 40 — Mover usage-meter a un panel lateral
 
 - `usage-meter` pasa a una banda de una línea sobre el prompt, sin borde (`Usage Meter: Contexto 9% · Límite 5h 4% · Semanal 3%` con los botones `[ ◧ Abrir ]` e idioma) y un panel lateral con el detalle: barras, subtítulos bajo la barra, leyenda de categorías siempre abierta. Antes el recuadro con tres vistas ocupaba mucho espacio sobre el prompt, y el panel tiene lugar de sobra. Se eliminaron las vistas compacta y una línea, y el panel nunca se abre solo (botón o `/usage-meter`), igual que `agent-radar`.
