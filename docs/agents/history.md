@@ -9,6 +9,11 @@ Historial de tareas resueltas — hechas o descartadas: el "qué pasó y por qu�
 
 ---
 
+## 2026-10-27 — ❌ Tarea 41 — Evaluar la UX de usage-meter
+
+- Descartada: al operador le gusta cómo quedó `usage-meter` tras la Tarea 40 (banda de una línea y panel lateral), así que no hay una evaluación que hacer. No se cambió código.
+- Si hace falta pulir `usage-meter`, los pendientes menores ya están en la Tarea 43. La Tarea 42 (integración visual de los mods) quedó libre.
+
 ## 2026-10-27 — ✅ Tarea 32 — Mejoras de UX en agent-radar
 
 - El botón de `agent-radar` pasa de `[ ● Agent Radar: ON ]` a `[ ● ON ]` / `[ ● OFF ]`: el nombre ya está a la izquierda de la banda y repetirlo ocupaba espacio. Los avisos breves al pulsar conservan `Agent Radar: ON/OFF`.
